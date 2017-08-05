@@ -55,12 +55,41 @@ window.onload=function(){
     //3. 两个tab切换
     var oD3=document.getElementsByClassName("detail3")[0];
     var oD4=document.getElementsByClassName("detail4")[0];
+    var oPick1=oD3.getElementsByClassName("pick")[0];
+    var oPick2=oD4.getElementsByClassName("pick")[0];
+    var aDiv1=oPick1.getElementsByTagName("div");
+    var aDiv2=oPick2.getElementsByTagName("div");
+    var aContent1=oD3.getElementsByClassName("content");
+    var aContent2=oD4.getElementsByClassName("content");
+
+    for(var i=0;i<3;i++){
+        aDiv1[i].index=i;
+        aDiv1[i].onclick=function(){
+            for(var j=0;j<3;j++){
+                aDiv1[j].className="";
+                aContent1[j].className="content";
+            }
+            this.className="toggle";
+            aContent1[this.index].className="content main";
+        }
+
+        aDiv2[i].index=i;
+        aDiv2[i].onclick=function(){
+            for(var j=0;j<3;j++){
+                aDiv2[j].className="";
+                aContent2[j].className="content";
+            }
+            this.className="toggle";
+            aContent2[this.index].className="content main";
+        }
+    }
+
 
     //4. 挡住
     var oPicCancle=document.getElementById("tip-cancle");
-    var oD3Btn=document.getElementsByClassName("btn")[0];
+    var oD3Btn=oD3.getElementsByClassName("btn")[0];
     
     oPicCancle.onclick=function(){
-        // oD3Btn.style.top=
+        oD3Btn.style.top= 74+"px";
     }
 }

@@ -134,7 +134,7 @@
     color: #fff;
 }
 
-.content .main{
+.content>.main{
     border: 1px solid #ddd;
     margin-bottom: 16px;
 }
@@ -487,12 +487,30 @@
     width: 53px;
     height: 28px;
     text-align: center;
+    font-family: SimSun;
+    line-height: 28px;
     border-bottom: 2px solid #eee;
 }
+.detail .pick div.toggle,.detail3 .pick div.toggle:hover{
+    color: #da1f3d;
+    border-bottom: 2px solid #da1f3d;
+}
+.detail3 .pick div:hover{
+    color: #ff9228;
+    border-bottom: 2px solid #ff9228;
+}
+
 .box2 .right .detail3 .content{
+    position: absolute;
+    top: 36px;
+    left: 0;
     margin-top:30px;
     width: 280px;
+     display: none; 
 }
+.box2 .right .detail3 .content.main{
+    display: block;
+} 
 .detail3 .box{
     margin-top:10px;
     width: 100%;
@@ -535,12 +553,17 @@
 }
 
 .detail3 .btn{
-    margin-left:-4px;
+    position: absolute;
+    top: 94px;
+    left: 0px;
+    margin: 0;  
+    width: 280px;
     padding: 6px 0;
     background-color: #ff9228;
     font-size: 16px;
     text-align: center;
     color: #fff;
+    transition-duration: .5s;
 }
 
 .detail4 .pick div{
@@ -549,12 +572,30 @@
     width: 53px;
     height: 28px;
     text-align: center;
+    font-family: SimSun;
+    line-height: 28px;
     border-bottom: 2px solid #eee;
 }
-.box2 .right .detail4 .content{
-    margin-top:24px;
-    width: 280px;
+.detail4 .pick div.toggle,.detail4 .pick div.toggle:hover{
+    color: #da1f3d;
+    border-bottom: 2px solid #da1f3d;
 }
+.detail4 .pick div:hover{
+    color: #ff9228;
+    border-bottom: 2px solid #ff9228;
+}
+
+.box2 .right .detail4 .content{
+    position: absolute;
+    top: 36px;
+    left: 0;
+    margin-top:30px;
+    width: 280px;
+    display: none; 
+}
+.box2 .right .detail4 .content.main{
+    display: block;
+} 
 .detail4 .content span.red{
     font-family: SimSun; 
     color: #da1f3d;
@@ -587,7 +628,7 @@
     overflow: hidden;
 }
 
-.footer.top img{
+.footer .top img{
     float: left;
     margin:25px 36px 0 0;
 }
