@@ -1,0 +1,245 @@
+.header .logo{
+    float: left;
+    margin-top:10px;
+}
+.header .navbar{
+    float: left;
+    margin-left: 20px;
+}
+.header .navbar li{
+    float: left;
+    padding: 0 15px;
+    height: 50px;
+}
+.header .navbar a:last-of-type li{
+    background-color: rgb(172, 22, 46);
+}
+.header .navbar a.white:hover{
+    color: #fff;
+}
+.header .navbar li:hover{
+    background-color: rgb(172, 22, 46);
+}
+.header .load{
+    float: right;
+    height: 50px;
+    font-size: 12px;
+    line-height: 50px;
+}
+.header .load li a:hover{
+    color: white;
+    text-decoration: underline;
+}
+.header .load li{
+    float:left;
+    color: #fff;
+    margin-right: 8px;
+}
+
+.position{
+    height: 40px;
+    font-size: 12px;
+    line-height: 40px;
+}
+
+.content .nav{
+    height: 39px;
+    border-bottom: 3px solid #DA1F3D;
+}
+.content .nav .navbar{
+    overflow: hidden;
+    text-align: center;
+}
+.content .nav .navbar li{
+    float: left;
+    width: 120px;
+    height: 39px;
+    margin-right: 6px;
+    line-height: 39px;
+    text-align: center;
+    font-size: 18px;
+}
+
+.content .nav .navbar li>a{
+    color: #333;
+}
+.content .nav .navbar li>a:hover{
+    color: #DA1F3D;
+}
+
+.content .nav .navbar li.sub{
+    width: auto;
+    margin: 0;
+    padding: 0 6px;
+    font-size: 16px;
+}
+.content .nav .navbar li.sub>a{
+    color: #666;
+}
+.content .nav .navbar li.sub>a:hover{
+    color: #DA1F3D;
+}
+
+.content .nav .now{
+    background-color: #DA1F3D;
+}
+.content .nav .navbar .now a{
+    color: #fff;
+}
+.content .nav .navbar .now a:hover{
+    color: #fff;
+}
+
+.content .main{
+    border: 1px solid #ddd;
+    margin-bottom: 16px;
+}
+.main>.detail{
+    width: 988px;
+    height: 80px;
+    background-color: #f7f7f7;
+    border-bottom: 1px solid #ddd;
+    overflow: hidden;
+}
+
+.main>.detail>div{
+    float: left;
+}
+
+.throw{
+    width: 400px;
+    height: 80px;
+}
+
+.throw p{
+    font-size: 12px;
+    margin: 14px 14px 8px 14px;
+}
+.throw p>a{
+    display: inline-block;
+    margin-left: 26px;
+}
+
+.throw .box{
+    margin-left: 14px;
+    width: 100%;
+    overflow:hidden;
+}
+
+.throw .circle{
+    float: left;
+    width: 272px;
+    overflow: hidden;
+}
+
+.throw .circle li{
+    float: left;
+    margin-right: 6px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(230, 69, 85);
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+}
+.throw .circle li:last-of-type{
+    margin-left: 5px;
+    background-color: rgb(69, 126, 230);
+}
+
+.throw .box .btn{
+    float: left;
+    width: 105px;
+    height: 32px;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    line-height: 32px;
+    background-color: #DA1F3D;
+}
+.main>.detail .open{
+    margin: 5px 0;
+    width: 140px;
+    padding: 10px;
+    padding-bottom: 0;
+    height: 50px;
+    border: 1px solid #bbb;
+    border-width: 0 1px;
+}
+.main>.detail .open>div{
+    float: left;
+    margin-right: 10px;
+}
+.main>.detail .open a{
+    font-family: SimSun;
+}
+
+.main>.detail .news{
+    margin: 10px;
+    font-family: SimSun;
+    font-size: 12px;
+}
+
+.main .box1{
+    width: 988px;
+    height: 560px;
+}
+.box1 .left{
+    float: left;
+    width: 355px;
+    height: 100%;
+    margin-left:20px;
+}
+
+.box1 .left .news{
+    margin: 30px 6px 0 0;
+    padding-left: 6px;
+    width: 355px;
+}
+.box1 .left .news .title{
+    font-size: 16px;
+    font-family: Microsoft Yahei;
+    font-weight: bold;
+}
+.box1 .left .news .title>a.t{
+    font-weight: bold;
+    color: #c11125;
+}
+.box1 .left .news .title>a.t:hover{
+    text-decoration: underline;
+}
+
+.box1 .left .news .news-list{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.box1 .left .news .news-list li{
+    list-style-type: disc;
+    height: 28px;
+}
+
+.box1 .right{
+    float: right;
+    width: 580px;
+    height: 100%;
+    margin-right: 10px;
+}
+.box1 .right .carousel{
+    position: relative;
+    float: left;
+    margin-top: 30px;
+    width: 580px;
+    height: 270px;
+    overflow: hidden;
+}
+
+.box1 .right .expert{
+    float: left;
+
+}
+
+.main .box2{
+    width: 988px;
+    height: 654px;
+}
