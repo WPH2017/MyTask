@@ -39,6 +39,12 @@ a.blue{
 a.blue:hover{
     text-decoration: underline;
 }
+a.black{
+    color: #333;
+}
+a.black:hover{
+    text-decoration: underline;
+}
 
 p{
     font-family: SimSun;

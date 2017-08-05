@@ -7,9 +7,11 @@
     margin-left: 20px;
 }
 .header .navbar li{
+    position: relative;
     float: left;
     padding: 0 15px;
     height: 50px;
+    transition:all .2s;
 }
 .header .navbar a:last-of-type li{
     background-color: rgb(172, 22, 46);
@@ -20,6 +22,48 @@
 .header .navbar li:hover{
     background-color: rgb(172, 22, 46);
 }
+.header .navbar li.big{
+    padding-right: 30px;
+}
+.header .navbar li .subnav{
+    position: absolute;
+    top:50px;
+    left: 0;
+    width: 105px;
+    text-align: center;
+    border: 2px solid rgb(172, 22, 46);
+    border-top-width: 0;
+    z-index: 9;
+    display: none;  
+}
+
+.header .navbar li.big:hover .subnav{
+    display: block;
+    cursor: pointer;
+}
+
+.header .navbar li.big .subnav li{
+    margin: 0;
+    padding: 0;
+    width: 105px;
+    height: 30px;
+    line-height: 30px;
+    background-color: #fff;
+}
+.header .navbar li.big .subnav li>a{
+    font-size: 12px;
+}
+.header #arrow{
+    position: absolute;
+    left: 82px;
+    top: 23px;
+    height: 0;
+    border-width: 6px;
+    border-style: solid dashed dashed;
+    border-color: #fff transparent transparent;
+    overflow: hidden;
+}
+
 .header .load{
     float: right;
     height: 50px;
@@ -231,15 +275,367 @@
     margin-top: 30px;
     width: 580px;
     height: 270px;
-    overflow: hidden;
+     overflow: hidden; 
 }
+
+#circle-box{
+    position: relative;
+    width: 5000px;
+    height: 100%;
+}
+
+.box1 .right .carousel .ban{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 35px;
+    background-color: rgba(0, 0, 0, .5);
+}
+#circle{
+    position: absolute;
+    right: 20px;
+    top:12px;
+}
+#circle li{
+    float: left;
+    margin: 0 4px;
+    width: 10px;
+    height: 10px;
+    background-color: #999;
+    border-radius: 50%;
+    cursor: pointer;
+}
+#circle li:first-of-type{
+    background-color: #fff;
+}
+
 
 .box1 .right .expert{
     float: left;
+    margin-top:20px;
+    width: 280px;
+    height: 228px;
+}
+.box1 .right .expert div{
+    margin: 16px 0;
+    width: 280px;
+    height: 86px;
+    font-size: 12px;
+    line-height: 20px;
+}
+.box1 .right .expert div>img{
+    float: left;
+    margin: 0 10px 20px 0;
+    width: 57px;
+    height: 57px;
+}
 
+.box1 .right .expert div span:first-of-type{
+    font-size: 14px;
+    font-weight: bold;
+}
+.box1 .right .expert div span:nth-of-type(2){
+    color: #666;
+}
+.box1 .right .expert div span:nth-of-type(3){
+    color: #333;
+}
+.box1 .right .expert .top{
+    border-bottom: 1px solid #eee;
+}
+    
+.box1 .right h1.t1{
+    font-size: 15px;
+    font-weight: bold;
+    color: #333;
+}
+
+.box1 .right .hot{
+    float: left;
+    margin-top: 20px;
+    width: 280px;
+    margin-left: 10px;
+}
+.box1 .right .hot img{
+    width: 280px;
+    height: 90px;
+    margin-top: 10px;
+}
+.box1 .right .hot .content{
+    width: 240px;
+    height: 73px;
+    padding: 10px 20px;
+    border: 1px solid #eee;
+    border-top-width: 0;
+    color: #000;
+    line-height: 30px;
+}
+.box1 .right .hot .content .small{
+    font-size: 12px;
+    color: #999;
 }
 
 .main .box2{
     width: 988px;
     height: 654px;
+}
+.box2 .left{
+    float: left;
+    width: 355px;
+    height: 100%;
+    margin-left:20px;
+}
+.box2 .left .infor{
+    position: relative;
+    float: left;
+    padding-top: 10px; 
+    width: 350px;
+    height: 202px;
+    border-top: 2px solid #333;
+}
+
+.box2 .left .infor .title{
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.box2 .left .infor>p{
+    position: absolute;
+    top:10px;
+    right: 10px;
+}
+
+.box2 .left .infor .infor-list{
+    margin-top: 20px;
+    padding-left: 20px;
+}
+.box2 .left .infor .infor-list li{
+    list-style-type: disc;
+    height: 28px;
+}
+
+.box2 .right{
+    float: right;
+    margin-right: 8px;
+    width: 580px;
+    height: 428px;
+}
+
+.box2 .right .detail{
+    position: relative;
+    float: left;
+    width: 280px;
+    height: 192px;
+    padding: 20px 0 0 5px;
+    color: #333;
+    border-top: 2px solid #ccc;
+}
+.box2 .right .detail:nth-of-type(2n){
+    margin-left:10px;
+}
+
+.box2 .right .detail .title{
+    font-size: 15px;
+}
+.box2 .right .detail .pick{
+    position: absolute;
+    right: 0px;
+    top: 22px;
+    font-size:12px;
+    font-family: SimSun;
+}
+.box2 .right .detail>p a{
+    font-family: SimSun;
+}
+
+.box2 .right .detail .content{
+    margin-top:10px;
+    font-family: SimSun;
+    font-size: 12px;
+}
+
+.box2 .right .detail2 .content .num{
+    padding: 10px 0 0 20px;
+    width: 280px;
+    height: 80px;
+    overflow: hidden;
+}
+.box2 .right .detail2 .content .pic{
+    float: left;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+}
+.box2 .right .detail2 .content .pic img{
+    width: 55px;
+    height: 55px;
+    margin: 4px 12px;
+}
+
+.box2 .right .detail2 .link{
+    float: left;
+    margin:10px 0 0 -4px;
+    width: 280px;
+    padding: 2px 0;
+    text-align: center;
+    background-color: #eee;
+}
+
+.detail3 .pick div{
+    float: left;
+    margin-left: 10px;
+    width: 53px;
+    height: 28px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+}
+.box2 .right .detail3 .content{
+    margin-top:30px;
+    width: 280px;
+}
+.detail3 .box{
+    margin-top:10px;
+    width: 100%;
+    overflow:hidden;
+}
+
+.detail3 .circle{
+    float: left;
+    width: 272px;
+    overflow: hidden;
+}
+
+.detail3 .circle li{
+    float: left;
+    margin-right: 6px;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: rgb(230, 69, 85);
+    text-align: center;
+    line-height: 32px;
+    color: #fff;
+}
+.detail3 .circle li:last-of-type{
+    margin-left: 5px;
+    background-color: rgb(69, 126, 230);
+}
+
+.detail3 .tip{
+    margin-top:50px;
+    margin-left:-4px;
+    text-align: center;
+    padding: 2px 0;
+    color: #333;
+    background-color: #eee;
+}
+.detail3 #tip-cancle:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.detail3 .btn{
+    margin-left:-4px;
+    padding: 6px 0;
+    background-color: #ff9228;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+}
+
+.detail4 .pick div{
+    float: left;
+    margin-left: 10px;
+    width: 53px;
+    height: 28px;
+    text-align: center;
+    border-bottom: 2px solid #eee;
+}
+.box2 .right .detail4 .content{
+    margin-top:24px;
+    width: 280px;
+}
+.detail4 .content span.red{
+    font-family: SimSun; 
+    color: #da1f3d;
+}
+
+.box2 .bottom{
+    float: right;
+    margin-right: 8px;
+    width: 580px;
+    padding:10px 0 0 5px;
+    border-top: 2px solid #333;
+}
+.box2 .bottom h1.t1{
+    font-size: 18px;
+    font-weight: normal;
+    color: #333;
+}
+
+.box2 .bottom img{
+    margin-top:16px;
+    width: 290px;
+    height: 145px;
+}
+.box2 .bottom a:first-of-type img{
+    margin-left:-5px;
+    /* margin-right: 2px; */
+}
+
+.footer .top{
+    overflow: hidden;
+}
+
+.footer.top img{
+    float: left;
+    margin:25px 36px 0 0;
+}
+.footer .help{
+    float: left;
+    margin-top:25px;
+    width: 145px;
+    height: 140px;
+    padding: 5px 80px 0 20px;
+    border-left: 1px solid #D7D7D7;
+}
+.footer .help ul{
+    margin-top:10px;
+    
+}
+.footer .help li{
+    list-style: disc;
+    margin-bottom: 8px;
+}
+
+.footer .nav{
+    width: 220px;
+    margin: 0 auto;
+    margin-top:50px;
+    font:12px;
+}
+.footer .nav a{
+    color: #0B71A2;
+    font-size: 12px;
+}
+
+.footer .yaoyaoling{
+    margin-top: 10px;
+    text-align: center;
+}
+.footer .yaoyaoling img{
+    display: inline-block;
+}
+.footer p.copyright{
+    margin-top: 20px;
+    text-align: center;
+    font-size: 12px;
+    font-family: Microsoft Yahei;
+}
+.footer p.tip{
+    margin-top: 10px;
+    text-align: center;
+    font-size: 12px;
+    color: #999;
+    font-family: Microsoft Yahei;
 }
