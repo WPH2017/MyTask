@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+         a:-ms-any-link{
+            color: -ms-link;
+            text-decoration: none;
+        } 
+        /* 问题在于，a标签的默认事件改变了text-decoration样式的话，其优先级是在标签和伪类之间的
+        * 猜想：默认事件移入时把a标签行内样式text-decoration改为underline,移开时删除text-decoration属性
+        */
+         /* a:hover{
+            text-decoration: underline;
+        }  */
+</style>
+<script>
+</script>
+</head>
+<body>
+    <a href="#" id="test">这是一个demo，注意下划线样式</a>
+</body>
+</html>

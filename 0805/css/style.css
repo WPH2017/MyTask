@@ -61,6 +61,7 @@
     border-width: 6px;
     border-style: solid dashed dashed;
     border-color: #fff transparent transparent;
+    transform-origin: 50% 25%;
     overflow: hidden;
 }
 
@@ -256,11 +257,18 @@
 
 .box1 .left .news .news-list{
     margin-top: 20px;
-    padding-left: 20px;
+    padding-left: 8px;
 }
 .box1 .left .news .news-list li{
-    list-style-type: disc;
     height: 28px;
+}
+.box1 .left .news .news-list li:before{
+    content: "";
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    margin: 0 6px 4px 0;
+    background-color: #000;
 }
 
 .box1 .right{
@@ -282,6 +290,18 @@
     position: relative;
     width: 5000px;
     height: 100%;
+    transition-duration: .5s;
+}
+#circle-box a{
+    position: relative;
+}
+#circle-box a .text{
+    position: absolute;
+    bottom: 14px;
+    left: 20px;
+    font-size: 12px;
+    color: #fff;
+    z-index: 9;
 }
 
 .box1 .right .carousel .ban{
@@ -328,6 +348,7 @@
     margin: 0 10px 20px 0;
     width: 57px;
     height: 57px;
+    border-radius: 50%;
 }
 
 .box1 .right .expert div span:first-of-type{
@@ -351,7 +372,7 @@
 }
 
 .box1 .right .hot{
-    float: left;
+    float: right;
     margin-top: 20px;
     width: 280px;
     margin-left: 10px;
@@ -362,11 +383,12 @@
     margin-top: 10px;
 }
 .box1 .right .hot .content{
-    width: 240px;
+    width: 238px;
     height: 73px;
     padding: 10px 20px;
     border: 1px solid #eee;
     border-top-width: 0;
+    margin-top: -4px;   
     color: #000;
     line-height: 30px;
 }
@@ -481,7 +503,8 @@
     background-color: #eee;
 }
 
-.detail3 .pick div{
+.detail3 .pick div.tab{
+    position: relative;
     float: left;
     margin-left: 10px;
     width: 53px;
@@ -491,22 +514,39 @@
     line-height: 28px;
     border-bottom: 2px solid #eee;
 }
-.detail .pick div.toggle,.detail3 .pick div.toggle:hover{
+.detail3 .pick div.tab.toggle,.detail3 .pick div.tab.toggle:hover{
     color: #da1f3d;
     border-bottom: 2px solid #da1f3d;
 }
-.detail3 .pick div:hover{
+.detail3 .pick div.tab.toggle .arrow,.detail3 .pick div.tab.toggle:hover .arrow{
+    border-color: transparent transparent #da1f3d;
+}
+.detail3 .pick div.tab:hover{
     color: #ff9228;
     border-bottom: 2px solid #ff9228;
+}
+.detail3 .pick div.tab:hover .arrow{
+    border-color: transparent transparent #ff9228;
+}
+
+.detail3 .pick a div.tab .arrow,.detail4 .pick a div.tab .arrow{
+    position: absolute;
+    left: 22px;
+    top: 20px;
+    height: 0;
+    width: 0;
+    border-width: 4px;
+    border-style: solid;
+    border-color: transparent transparent #eee;
 }
 
 .box2 .right .detail3 .content{
     position: absolute;
     top: 36px;
     left: 0;
-    margin-top:30px;
+    margin:30px 0 0 6px;
     width: 280px;
-     display: none; 
+    display: none; 
 }
 .box2 .right .detail3 .content.main{
     display: block;
@@ -519,13 +559,13 @@
 
 .detail3 .circle{
     float: left;
-    width: 272px;
+    width: 270px;
     overflow: hidden;
 }
 
 .detail3 .circle li{
     float: left;
-    margin-right: 6px;
+    margin-right: 5px;
     width: 32px;
     height: 32px;
     border-radius: 50%;
@@ -534,20 +574,28 @@
     line-height: 32px;
     color: #fff;
 }
-.detail3 .circle li:last-of-type{
-    margin-left: 5px;
+.detail3 .circle li.blue{
+    margin-left: 4px;
     background-color: rgb(69, 126, 230);
+}
+.detail3 .circle li input{
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
 }
 
 .detail3 .tip{
     margin-top:50px;
-    margin-left:-4px;
     text-align: center;
     padding: 2px 0;
     color: #333;
     background-color: #eee;
 }
-.detail3 #tip-cancle:hover{
+.detail3 .tip-cancle:hover{
     cursor: pointer;
     text-decoration: underline;
 }
@@ -556,7 +604,7 @@
     position: absolute;
     top: 94px;
     left: 0px;
-    margin: 0;  
+    margin: 0;
     width: 280px;
     padding: 6px 0;
     background-color: #ff9228;
@@ -566,7 +614,8 @@
     transition-duration: .5s;
 }
 
-.detail4 .pick div{
+.detail4 .pick div.tab{
+    position: relative;
     float: left;
     margin-left: 10px;
     width: 53px;
@@ -576,20 +625,26 @@
     line-height: 28px;
     border-bottom: 2px solid #eee;
 }
-.detail4 .pick div.toggle,.detail4 .pick div.toggle:hover{
+.detail4 .pick div.tab.toggle,.detail4 .pick div.tab.toggle:hover{
     color: #da1f3d;
     border-bottom: 2px solid #da1f3d;
 }
-.detail4 .pick div:hover{
+.detail4 .pick div.tab.toggle .arrow,.detail4 .pick div.tab.toggle:hover .arrow{
+    border-color: transparent transparent #da1f3d;
+}
+.detail4 .pick div.tab:hover{
     color: #ff9228;
     border-bottom: 2px solid #ff9228;
+}
+.detail4 .pick div.tab:hover .arrow{
+    border-color: transparent transparent #ff9228;
 }
 
 .box2 .right .detail4 .content{
     position: absolute;
     top: 36px;
     left: 0;
-    margin-top:30px;
+    margin:30px 0 0 8px;
     width: 280px;
     display: none; 
 }
@@ -616,11 +671,11 @@
 
 .box2 .bottom img{
     margin-top:16px;
-    width: 290px;
+    width: 282px;
     height: 145px;
 }
 .box2 .bottom a:first-of-type img{
-    margin-left:-5px;
+    margin-right:8px;
     /* margin-right: 2px; */
 }
 
@@ -640,13 +695,34 @@
     padding: 5px 80px 0 20px;
     border-left: 1px solid #D7D7D7;
 }
+.footer .help b{
+    font-size: 15px;
+    color: #666;
+}
+
+.footer .help b::before{
+    content: " ";
+    display: inline-block;
+    width: 3px;
+    height: 16px;
+    margin-bottom: -2px;
+    background-color: #da1f3d;
+}
 .footer .help ul{
-    margin-top:10px;
-    
+    margin-top:10px;  
 }
 .footer .help li{
-    list-style: disc;
     margin-bottom: 8px;
+    line-height: 20px;
+    vertical-align: middle;
+}
+.footer .help li:before{
+    content: " ";
+    display: inline-block;
+    width: 3px;
+    height: 3px;
+    margin-bottom: 3px;
+    background-color: #DA1F3D;
 }
 
 .footer .nav{
