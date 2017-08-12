@@ -7,9 +7,6 @@ a{
     color: #878787;
     font-size: 12px;
 }
-a.gray:hover{
-    color: #333;
-}
 ul,li{
     list-style: none;
 }

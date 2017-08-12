@@ -1,5 +1,10 @@
 .logo{
-    margin: 5px 0;
+    margin: 10px 0;
+    cursor: pointer;
+}
+.log:hover img{
+    opacity: .1;
+    /* filter: Alpha(opacity=50); */
 }
 .h-nav{
     float: right;
@@ -246,4 +251,170 @@
 .container{
     width: 100%;
     margin-top: 10px;
+    overflow: hidden;
+}
+.container p.title{
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.goodbox{
+    position: relative;
+    float: left;
+    width: 316px;
+    height: 366px;
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+}
+.goodbox:nth-of-type(3n-1){
+    margin-right: 0;
+}
+.goodbox .detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 316px;
+    height: 316px;
+    background-color: rgba(0, 0, 0, 0.80);
+    z-index: 3;
+    display: none;
+}
+.goodbox a:hover .detail{
+    display: block;
+}
+.goodbox .price{
+    padding: 20px 0 0 20px;
+    font: italic bold 24px SimHei;
+    color: #0c6eba;
+}
+.goodbox .name{
+    padding-top:100px;
+    text-align: center;
+    font:bold 14px Microsoft Yahei;
+    color: #fff;
+}
+.goodbox .intro{
+    padding-top: 4px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.goodbox>a>img{
+    width: 316px;
+    height: 316px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.goodbox .lable{
+    position: relative;
+    margin-top: 6px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color: #999;
+}
+.goodbox .lable a{
+    font-size: 16px;
+    color: #999;
+}
+.goodbox .lable a img{
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.goodbox .heart{
+    float: right;
+    width: 55px;
+}
+
+.goodbox .heart img{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top:2px;
+}
+
+.more{
+    position: relative;
+    margin: 0 auto;
+    width: 142px;
+    height: 44px;
+    font:italic bold 22px/44px SimHei;
+    text-align: center;
+    color: #292f34;
+    border: 3px solid #292f34;
+}
+.more:hover{
+    color: #fff;
+    background-color: #292f34;
+}
+.service>p{
+    font-weight: bold;
+    text-align: center;
+}
+.service>p>a{
+    font-size: 16px;
+    color: #999;
+}
+.service ul{
+    margin-top:30px;
+    overflow: hidden;
+}
+.service li{
+    float: left;
+    margin-right: 20px;
+    
+}
+.service li img{
+    float: left;
+}
+.service li p{
+    width: 185px;
+    margin: 10px 60px 0 0;
+    font-size: 14px;
+}
+.service li:last-of-type p{
+    margin-right: 0;
+}
+.footer{
+    color: #5c5c5c;
+}
+
+.download{
+    margin-bottom: 20px;
+}
+
+.footer a{
+    color: #5c5c5c;
+}
+.footer a:hover{
+    transition: color .3s;
+    color: #aaa;
+}
+.f-nav{
+    margin: 4px 0;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+.copyright{
+    font-size: 12px;
+    line-height: 20px;
+}
+.link{
+    position: absolute;
+    top: 30px;
+    right: 0px;
+    overflow: hidden;
+}
+.link img{
+    float: left;
+    width: 26px;
+    height: 20px;
+    margin-right: 20px;
+    background-color: #fff;
 }
