@@ -225,6 +225,7 @@
     width: 20px;
     height: 4px;
     background-color: #ccc;
+    cursor: pointer;
 }
 .carousel .pick li.main{
     background-color: #292f34;
@@ -269,7 +270,7 @@
     margin: 0 20px 20px 0;
     overflow: hidden;
 }
-.goodbox:nth-of-type(3n-1){
+.goodbox:nth-of-type(3n){
     margin-right: 0;
 }
 .goodbox .detail{
