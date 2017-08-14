@@ -42,7 +42,7 @@ $.ajax({
     "type":"GET",
     "success":function(json){
         var html="";
-        setTimeout(function(){
+        // setTimeout(function(){
             
             var oContainer=document.getElementsByClassName("container")[0];
             for(var i=0;i<json.data.length;i++){
@@ -63,6 +63,6 @@ $.ajax({
                     oImg.src="./img/heart_red.png";
                 }
             }
-        },1000);
+        // },1000);
     }
 });
