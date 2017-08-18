@@ -137,13 +137,22 @@
     text-align: center;
 }
 .c-nav{
+    position: relative;
+    float:left;
     width: 100%;
     height: 45px;
     border-bottom: 4px solid #ededed;
+    z-index:2;
 }
-.c-nav li{
+.c-nav>ul{
+    overflow: hidden;
+}
+.c-nav>ul>li{
     float: left;
     margin-right:43px;
+}
+.c-nav>ul>li>a{
+    display: block;
     width: 121px;
     height: 45px;
     line-height: 46px;
@@ -152,10 +161,10 @@
     text-align: center;
     border-bottom: solid 4px #ededed;
 }
-.c-nav li:hover{
+.c-nav li:hover a{
     border-color: #292f34;
 }
-.c-nav ul a:first-of-type li{
+.c-nav ul li:first-of-type{
     margin-right:0;
 }
 #search{
@@ -163,6 +172,95 @@
     width: 260px;
     color: #eee;
 }
+.c-nav li:hover .subbox{
+    display: block;
+}
+.c-nav .subbox{
+    position: absolute;
+    top: 49px;
+    left: 0;
+    width: 100%;
+    height:auto;
+    background-color: #fff;
+    display: none;
+    overflow: hidden;
+}
+.c-nav .para{
+    padding:30px 0;
+    line-height:60px;
+}
+.c-nav .para a{
+    margin:0 30px;
+}
+.c-nav .list{
+    position: relative;
+    width: 680px;
+    overflow: hidden;
+}
+.c-nav .list .li-icon{
+    position: relative;
+    float: left;
+    margin: 0 8px;
+    width: 80px;
+    text-align: center;
+}
+.c-nav .list .li-icon:nth-of-type(7n){
+    margin-right:0;
+}
+.c-nav .list .li-icon img{
+    width: 40px;
+    height: 40px;
+    margin-bottom:-46px;
+}
+.c-nav .list .li-icon .tag{
+    color: #000;
+    font-weight: bold;
+    font-size:16px;
+}
+.c-nav .list .sub{
+    float: left;
+    /*top:100px;*/
+    margin-top:-20px;
+    width: 680px;
+    display: none;
+}
+.c-nav .list .sub a{
+    margin-left:20px;
+    margin-right:26px;
+}
+.c-nav .list .sub a:last-of-type{
+    margin-right:0;
+}
+.c-nav .list .li-icon:hover+.sub{
+    display: block;
+    /*clear:none;*/
+}
+.c-nav .list .line{
+    float: left;
+    width: 100%;
+    height: 60px;
+    z-index:-1;
+    background-color: #000;
+}
+
+.c-nav .subbox .magazine{
+    position: absolute;
+    right:20px;
+    top: 0;
+    margin:20px 10px 0 0;
+    width: 230px;
+    height:300px;
+}
+.c-nav .subbox .magazine img{
+    margin-bottom:-20px;
+    width: 230px;
+    height: 230px;
+}
+.c-nav .subbox .magazine a span{
+    display: inline-block;
+    width: 200px;
+}
+
 #search input{
     float: left;
     margin-top: 10px;
@@ -183,7 +281,7 @@
 .carousel{
     position: relative;
     width: 100%;
-    margin:20px 0;
+    margin:80px 0;
 }
 .carousel .box{
     position: relative;
@@ -292,13 +390,13 @@
     color: #0c6eba;
 }
 .goodbox .name{
-    padding-top:100px;
+    padding:100px 30px 0;
     text-align: center;
     font:bold 14px Microsoft Yahei;
     color: #fff;
 }
 .goodbox .intro{
-    padding-top: 4px;
+    padding: 4px 40px 0;
     text-align: center;
     font-size: 12px;
     color: #fff;

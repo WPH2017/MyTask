@@ -1,0 +1,13 @@
+.left{
+    float: left;
+    width: 730px;
+
+}
+.picChange{
+    float: left;
+    width: 350px;
+}
+
+.right{
+    float: right;
+}

@@ -1,0 +1,83 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #999;
+    color: #fff;
+    font-weight: bold;
+}
+.register{
+    position: relative;
+    margin: 0 auto;
+    width: 565px;
+    line-height:60px;
+}
+.register>img{
+    display: block;
+    margin: 0 auto;
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+.register input{
+    border:none;
+    outline: none;
+}
+.register input[type="text"]{
+    position: absolute;
+    right:120px;
+    padding-left:30px;
+    width: 290px;
+    height: 50px;
+    color: #fff;
+    background-color: #ccc;
+}
+.register input[type="text"]::placeholder{
+    font-size:14px;
+    font-weight: bold;
+    color: #fff;
+}
+.register input[type="text"]:focus::placeholder{
+    color:transparent;
+}
+.register #code{
+    right:190px;
+    width: 220px;
+}
+.register .codeimgchange{
+    display: block;
+    position: absolute;
+    top:290px;
+    right:40px;
+    font-size:12px;
+    cursor: pointer;
+}
+.register p.small{
+    margin-left:130px;
+    font-size:12px;
+}
+.register p.small>a{
+    text-decoration: none;
+    color: #2751d7;
+}
+#register{
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    padding: 0;
+    width: 300px;
+    height: 50px;
+    cursor: pointer;
+    border: 0;
+    background: #25292e;
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.register .more{
+    text-align: right;
+}
+.register .more a{
+    color: #fff;
+}

@@ -13,7 +13,7 @@ ul,li{
 .header-box{
     width: 100%;
     height: 56px;
-    line-height: 56px;
+    /*line-height: 56px;*/
     background-color: #25292e;
 }
 .content-box{
@@ -41,6 +41,7 @@ ul,li{
     position: relative;
     margin: 0 auto;
     width: 1000px;
+    z-index: 1;
 }
 .service{
     position: relative;

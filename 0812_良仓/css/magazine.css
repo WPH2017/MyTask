@@ -1,0 +1,48 @@
+.content{
+    overflow: hidden;
+}
+.content p.ti{
+    margin:30px 0;
+    text-align: center;
+    font:bold 50px/50px Microsoft Yahei;
+}
+.content p small{
+    font-size:30px;
+}
+.content .nav{
+    width: 100%;
+    border-bottom:1px solid #eee;
+    overflow: hidden;
+}
+.content .nav li{
+    float: left;
+}
+.content .nav li a{
+    display: block;
+    width: 70px;
+    height: 30px;
+    line-height:20px;
+    text-align: center;
+}
+
+.magbox{
+    float:left;
+    margin:25px 0 0 23px;
+    width: 318px;
+    text-align: center;
+}
+.magbox:nth-of-type(3n+1){
+    margin-left: 0;
+}
+.magbox img{
+    width: 318px;
+    height: 190px;
+}
+.magbox p{
+    margin: 0;
+    padding: 0;
+    line-height:20px;
+}
+.magbox .goto{
+
+}
