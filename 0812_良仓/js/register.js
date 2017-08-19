@@ -1,0 +1,14 @@
+$('#mobile').click(function(){
+    $.ajax({
+        "url":"http://h6.duchengjiu.top/shop/api_user.php",
+        "type":"post",
+        "data":{
+            "status":"register",
+            "username":$(this).val(),
+            "contentType":"application/x-www-form-urlencoded"
+        },
+        "success":function(data){
+            console.log(data.message);
+        }    
+    });
+});
