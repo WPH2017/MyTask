@@ -6,19 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>首页</title>
-    <link rel="stylesheet" href="./css/main.css">
-    <link rel="stylesheet" href="./css/style.css">
-    <script src="./js/ajax.js"></script>
+    <link rel="stylesheet" href="./css/all.css">
+    <link rel="stylesheet" href="./css/index.css">
     <script src="./js/jquery-1.12.3.min.js"></script>
 </head>
 
 <body>
     <div class="header-box">
         <div class="header">
-            <img src="./img/logo.png" alt="" class="logo">
+            <i class="logo"></i>
             <div class="h-nav">
                 <ul>
-                    <li class="login"><a href="./login.html">登录 </a>&nbsp;&nbsp;<a href="javascript:void(0)">注册</a></li>
+                    <li class="login"><a href="./login.html">登录 </a>&nbsp;&nbsp;<a href="register.html">注册</a></li>
                     <li class="line"></li>
                     <li class="sub">购物车
                         <div class="subnav subnav1">
@@ -155,15 +154,17 @@
                     </div>
                 </li>
                 <li class="none"><a href="javascript:void(0)">达人</a></li>
-                <li id="search">
-                    <input type="text" placeholder="search...">
-                    |
-                    <img src="./img/search.png" alt="">
+                <li class="searchbox">
+                <a href="javascript:void(0)" class="search-icon"></a>
+                    <div id="search">
+                        <input type="text" placeholder="search...">
+                    </div>
                 </li>
             </ul>
+
         </div>
         </div>
-        <div class="back">回到顶部</div>
+        <div id="backBtn"></div>
         <a href="javascript:void(0)"><div class="contact">联系客服</div></a>
     </div>
     <div class="content-box">
@@ -205,6 +206,7 @@
             </div>
             <div class="container">
                 <p class="title">人气良品</p>
+                <img class="loading" src="./img/busy.gif">
 
                 <!-- 数据模板
                 <div class="goodbox">
@@ -226,27 +228,29 @@
                 </div> -->
                 
             </div>
-            <a href="javascript:void(0)"><div class="more">MORE</div></a>
+            <a href="javascript:void(0)"><i class="more"></i></a>
         </div>
     </div>
     <div class="bottom-content-box">
         <div class="service">
-            <p><a href="javascript:void(0)">良仓商店/OUR SHOP</a></p>
+            <p><a href="javascript:void(0)"><i class="s1"></i>良仓商店/OUR SHOP</a></p>
             <ul>
-                <li><img src="./img/icon0.png" alt="">
-                    <p>全球精品<br>Global Selections</p>
+                <li>
+                    <i class="i1"></i>
+                    <p>全球精品<br><span class="small">Global Selections</span></p>
                 </li>
                 <li>
-                    <img src="./img/icon0.png" alt="">
-                    <p>全球精品<br>Global Selections</p>
+                    <i class="i2"></i>
+                    <p>正品保证<br><span class="small">Authenticity Guaranteed</span></p>
                 </li>
                 <li>
-                    <img src="./img/icon0.png" alt="">
-                    <p>全球精品<br>Global Selections</p>
+                    <i class="i3"></i>
+                    <p>全场包邮<br><span class="small">Free Delivery</span></p>
                 </li>
                 <li>
-                    <img src="./img/icon0.png" alt="">
-                    <p>全球精品<br>Global Selections</p>
+                    <i class="i4"></i>
+                    <i class="i5"></i>
+                    <p><br><span class="small">工作日 09:00-18:00</span></p>
                 </li>
             </ul>
         </div>
@@ -254,13 +258,20 @@
     <div class="footer-box">
         <div class="footer">
             <div class="download">
-                <img src="" alt="">
-                <p><a href="javascript:void(0)">iPhone Android <br>客户端下载</a></p>
+                <i class="d1"></i>
+                <a href="javascript:void(0)">iPhone Android <br>客户端下载</a>
+                <div class="qrcode">
+                    <i class="q1"></i>
+                    <i class="q2"></i>
+                     下载iPhone版 下载Android版
+                </div>
             </div>
             <div class="link">
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
+                <i class="l1">
+                    <i class="q3"></i>
+                </i>
+                <i class="l2"></i>
+                <i class="l3"></i>
             </div>
             <div class="f-nav">
                 <p> <a href="javascript:void(0)" rel="">关于良仓</a>&nbsp; | &nbsp;<a href="javascript:void(0)" rel="">服务协议</a>&nbsp; | &nbsp;<a href="javascript:void(0)"rel="">隐私保护政策</a>&nbsp; | &nbsp;<a href="javascript:void(0)" rel="">使用指南</a>&nbsp; | &nbsp;<a href="javascript:void(0)" rel="">联系我们</a>&nbsp; | &nbsp;<a href="javascript:void(0)" rel="">加入我们</a>&nbsp; | &nbsp;<a href="javascript:void(0)" rel="">友情链接</a>&nbsp; | &nbsp;<a href="javascript:void(0)">私信良仓</a></p>
@@ -275,6 +286,6 @@
         </div>
     </div>
 </body>
+<script src="./js/all.js"></script>
 <script src="./js/index.js"></script>
-<script src="./js/index-data.js"></script>
 </html>

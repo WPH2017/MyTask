@@ -1,0 +1,180 @@
+.loading{
+    margin: 0 auto;
+    display: none;
+}
+.carousel{
+    position: relative;
+    width: 100%;
+    margin:80px 0;
+}
+.carousel .box{
+    position: relative;
+    width: 100%;
+    height: 475px;
+    overflow: hidden;
+}
+.carousel .box .imgbox{
+    position: absolute;
+    left:0;
+    width: 1800%;
+    height: 475px;
+}
+.carousel .box .imgbox img{
+    float: left;
+}
+.carousel .box:hover+.left-arrow,.carousel .box:hover+.left-arrow+.right-arrow{
+    display: block;
+}
+.carousel .left-arrow,.carousel .right-arrow{
+    position: absolute;
+    top: 250px;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0.40);
+    /*display: none;*/
+}
+.carousel .left-arrow{
+    left:20px;
+}
+.carousel .right-arrow{
+    right:20px;
+}
+.carousel .pick{
+    position: relative;
+    margin: 10px auto;
+    width: 230px;
+    height: 4px;
+}
+.carousel .pick li{
+    float: left;
+    margin: 0 4px;
+    width: 20px;
+    height: 4px;
+    background-color: #ccc;
+    cursor: pointer;
+}
+.carousel .pick li.main{
+    background-color: #292f34;
+}
+
+.banner{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+.banner img{
+    float: left;
+    margin:0 23px 23px 0;
+}
+.banner a:nth-of-type(3) img,.banner a:nth-of-type(5) img{
+    margin-right:0;
+}
+.banner .fix{
+    position: absolute;
+    top:214px;
+    left: 0;
+}
+
+.container{
+    width: 100%;
+    margin-top: 10px;
+    overflow: hidden;
+}
+.container p.title{
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+    font-size: 12px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+}
+.goodbox{
+    position: relative;
+    float: left;
+    width: 316px;
+    height: 366px;
+    margin: 0 20px 20px 0;
+    overflow: hidden;
+}
+.goodbox:nth-of-type(3n){
+    margin-right: 0;
+}
+.goodbox .detail{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 316px;
+    height: 316px;
+    background-color: rgba(0, 0, 0, 0.80);
+    z-index: 3;
+    display: none;
+}
+.goodbox a:hover .detail{
+    display: block;
+}
+.goodbox .price{
+    padding: 20px 0 0 20px;
+    font: italic bold 24px SimHei;
+    color: #0c6eba;
+}
+.goodbox .name{
+    padding:100px 30px 0;
+    text-align: center;
+    font:bold 14px Microsoft Yahei;
+    color: #fff;
+}
+.goodbox .intro{
+    padding: 4px 40px 0;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+}
+.goodbox>a>img{
+    width: 316px;
+    height: 316px;
+    background-color: #fff;
+    z-index: 1;
+}
+
+.goodbox .lable{
+    position: relative;
+    margin-top: 6px;
+    height: 44px;
+    line-height: 44px;
+    font-size: 16px;
+    color: #999;
+}
+.goodbox .lable a{
+    font-size: 16px;
+    color: #999;
+}
+.goodbox .lable a img{
+    float: left;
+    width: 40px;
+    height: 40px;
+}
+.goodbox .heart{
+    float: right;
+    width: 55px;
+}
+
+.goodbox .heart img{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-top:2px;
+}
+
+.more{
+    position: relative;
+    margin: 0 auto;
+    width: 148px;
+    height: 50px;
+    background: url("../img/icon.png");
+    background-position: 0 -687px;
+}
+.more:hover{
+    background-position: 0 -640px;
+}
