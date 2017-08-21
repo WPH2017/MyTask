@@ -12,7 +12,7 @@ imgbox.append(img.eq(0).clone());
 
 var timer = setInterval(function () {
     index++;
-    if(index>9){
+    if(index>8){
         index=0;
     }
     move(index);
@@ -53,6 +53,14 @@ lis.click(function () {
     move(index);
 });
 
+function move(i) {
+    lis.eq(i).addClass("main").siblings().removeClass();
+    if(i>8){
+        imgbox.css({"left":-img.eq(0).position().left});
+        return;
+    }
+    imgbox.animate({"left":-img.eq(i).position().left},500);
+}
 
 
 // 闭包形式传参
@@ -66,16 +74,54 @@ lis.click(function () {
 //     return setMove;
 // }
 
-function move(i) {
-    lis.eq(i).addClass("main").siblings().removeClass();
-    if(i>8){
-        imgbox.css({"left":-img.eq(0).position().left});
-        return;
-    }
-    imgbox.animate({"left":-img.eq(i).position().left},500);
-}
 
-//2. 主体数据导入
+
+//2. 搜索
+var search=$('#search input');
+var searchbox=$('.searchbox');
+searchbox.mouseenter(function () {
+    search.parent().animate({"right":0,"border-bottom-color":"#292f34"},300);
+});
+searchbox.mouseleave(function () {
+    search.parent().animate({"right":-220,"border-bottom-color":"transparent"},300);
+});
+
+search.focus(function () {
+    search.parent().css({
+        "right":0,
+        "border-bottom-color": "#292f34"
+    });
+});
+search.blur(function () {
+    search.parent().css({
+        "right":-220,
+        "border-bottom-color": "transparent"
+    });
+});
+
+
+search.change(function (){
+    var text=search.val();
+   $.ajax({
+      "type":"GET",
+       "url":"http://h6.duchengjiu.top/shop/api_goods.php",
+       "data":{
+          "search_text":text,
+       },
+       "success":function(response){
+          if(response.code===0){
+              search.css("box-shadow","inset 0 0 0 2px green");
+              alert(response.data.message+",开始跳转");
+              location='detail.html?id='+response.data.goods_id+"&goods_id="+response.data.cat_id;
+          }else{
+              alert(response.data.message+",请重新输入~");
+              search.css("box-shadow","inset 0 0 0 2px red");
+          }
+       }
+   });
+});
+
+//3. 主体数据导入
 $('.loading').css("display","block");
 $.ajax({
     "url":"http://h6.duchengjiu.top/shop/api_goods.php",

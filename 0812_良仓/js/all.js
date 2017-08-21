@@ -78,3 +78,13 @@ $.ajax({
         });
     }
 });
+
+//检测登录状态并退出登录
+if(localStorage.getItem("token")){
+    var loginbar=$('.login');
+    loginbar.html("<a href='#'>"+ localStorage.getItem("username") +"</a>&nbsp;&nbsp;<a href='#' class='cancle'>退出登录</a>");
+    $('.cancle').click(function(){
+       localStorage.clear();
+       loginbar.html("<a href=\"./mobilelogin.html\">登录 </a>&nbsp;&nbsp;<a href=\"register.html\">注册</a>");
+    });
+}

@@ -23,7 +23,7 @@ body{
     border:none;
     outline: none;
 }
-.register input[type="text"]{
+.register input[type="text"],.register input[type="password"]{
     position: absolute;
     right:120px;
     padding-left:30px;
@@ -32,12 +32,12 @@ body{
     color: #fff;
     background-color: #ccc;
 }
-.register input[type="text"]::placeholder{
+.register input::placeholder{
     font-size:14px;
     font-weight: bold;
     color: #fff;
 }
-.register input[type="text"]:focus::placeholder{
+.register input:focus::placeholder{
     color:transparent;
 }
 .register #code{
@@ -80,4 +80,23 @@ body{
 }
 .register .more a{
     color: #fff;
+}
+.register .tip{
+    float: right;
+    margin-top:-65px;
+    text-align: right;
+    font-size:12px;
+}
+.register .confirmTip{
+    position: relative;
+    height: 12px;
+    font-size:12px;
+    line-height:12px;
+    margin-left:153px;
+}
+.register .registerTip{
+    width: 120px;
+    margin: 0 auto;
+    font-size:12px;
+
 }

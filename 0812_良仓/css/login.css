@@ -2,6 +2,14 @@
     padding: 0;
     margin: 0;
 }
+body{
+    background-color: #999;
+    color: #fff;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+}
 .login{
     position: relative;
     margin: 0 auto;
@@ -10,35 +18,35 @@
 .login>img{
     display: block;
     margin: 0 auto;
-    margin-top: 80px;
+    margin-top: 280px;
     margin-bottom: 40px;
 }
-#mobile,#code{
+#username{
+    background: url(../img/usericon.png) no-repeat 8px 10px;
+}
+#password{
+    background: url(../img/passicon.png) no-repeat 8px 10px;
+}
+#username,#password{
+    display: block;
     margin-top: 20px;
-    padding-left:35px;
+    padding-left:60px;
     border: 0;
-    border-bottom:solid 1px #000;
     font-size: 18px;
-    width:265px;
-    height:34px;
+    line-height: 50px;
+    width:240px;
+    height:50px;
     outline: none;
+    color: #fff;
+    background-color: #ccc;
 }
-#mobile{
-    background: url(../img/mobile.png) no-repeat 6px 6px;
+input::placeholder{
+    color: #fff;
+    font-weight:bold;
+    font-size:15px;
 }
-#code{
-    width: 136px;
-    background: url(../img/check.png) no-repeat -3px 3px;
-}
-#get{
-    margin-left: 12px;
-    width: 112px;
-    height: 37px;
-    outline: none;
-    border:  1px solid #000;
-    border-radius: 4px;
-    background-color: #fff;
-    cursor: pointer;
+input:focus::placeholder{
+    color: transparent;
 }
 #login{
     outline: none;
@@ -52,17 +60,66 @@
     color: #ffffff;
     margin-top: 9px;
     margin-bottom: 30px;
-    border-radius: 6px;
 }
 .small{
-    margin: 20px 0;
+    margin-top: 20px;
+    font-size: 13px;
+    font-weight:normal;
+}
+.forget{
+    position: absolute;
+    right: 0;
+    top:286px;
+    font-size:13px;
+    font-weight:normal;
+}
+.forget a{
+    color: #fff;
+}
+.tip{
+    height: 16px;
     font-size: 13px;
 }
-.more{
-    text-align: center;
+.link{
+    float: left;
+    overflow: hidden;
 }
-.more a{
-    font-size: 14px;
-    color: #000;
-    text-decoration: none;
+.link a{
+    float: left;
+    display: block;
+    margin-right:14px;
+    width: 24px;
+    height: 22px;
+}
+.qq{
+    background: url("../img/qqnormal.png");
+}
+.qq:hover{
+    background: url("../img/qqmouse.png");
+}
+.weibo{
+    background: url("../img/xinlangnormal.png");
+}
+.weibo:hover{
+    background: url("../img/xinlangmouse.png");
+}
+.douban{
+    background: url("../img/doubannormal.png");
+}
+.douban:hover{
+    background: url("../img/doubanmouse.png");
+}
+.qqweibo{
+    background: url("../img/tengxunnormal.png");
+}
+.qqweibo:hover{
+    background: url("../img/tengxunmouse.png");
+}
+.register{
+    text-align: right;
+    font-size:13px;
+}
+.register a{
+    text-decoration-line: underline;
+    color:#fff;
 }
