@@ -50,12 +50,10 @@ $(function () {
                     console.log(bool);
                     if(bool){
                         other.each(function () {
-                            console.log($(this)+'1')
                             $(this).attr('checked','checked');
                         });
                     }else{
                         other.each(function () {
-                            console.log($(this)+'2');
                             $(this).attr('checked','');
                         });
                     }
