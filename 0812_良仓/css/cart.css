@@ -9,6 +9,7 @@
 }
 .cart-table{
     width: 100%;
+    border-spacing: 0;
 }
 .cart-table th,.cart-table td{
     border-spacing: 0;
@@ -56,8 +57,15 @@
     text-align: left;
 }
 .cart-table .item button{
+    color: #6c6c6c;
+    width: 12px;
     border:0;
     outline: none;
+    cursor: pointer;
+    background-color: transparent;
+}
+.cart-table .item button:hover{
+    background-color: #eee;
 }
 .summary{
     text-align: center;

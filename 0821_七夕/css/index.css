@@ -1,4 +1,4 @@
-.body{
+body{
     margin: 0;
     padding: 0;
     overflow: hidden;
@@ -15,21 +15,21 @@
     width: .27rem;
     left:.38rem;
     top:0;
-    transform-origin: 0 -.05rem;
+    transform-origin: 0.2rem -.4rem;
     animation: logo-0 infinite;
     /*animation-delay: 3s;*/
     animation-duration: 4s;
     animation-direction: alternate;
 }
 @keyframes logo-0 {
-    0%{transform: rotate(-10deg)}
-    100%{transform: rotate(10deg)}
+    0%{transform: rotate(-2deg)}
+    100%{transform: rotate(4deg)}
 }
 
 .jump{
     position: absolute;
-    top:.05rem;
-    right:.06rem;
+    top:.04rem;
+    right:.04rem;
     width: .123rem;
 }
 .qi{
@@ -54,8 +54,8 @@
 }
 .xi{
     position: absolute;
-    top:-.02rem;
-    left: .5rem;
+    top:-.04rem;
+    left: .54rem;
     width: 0.436rem;
     z-index: 2;
     /*transform-origin: -.1rem -.2rem;*/
@@ -80,35 +80,41 @@
     100%{
         top:-.02rem;}
 }
+.qixishadow{
+    position: absolute;
+    top: 0.2rem;
+    left:.05rem;
+    width: 0.96rem;
+}
 .people{
     position: absolute;
-    top:0.4rem;
+    top:0.5rem;
     left:0.4rem;
     width: 0.192rem;
     z-index: 3;
+    /*opacity: 0;*/
     animation: people-0 5s;
-
+    animation-delay:3s;
 }
 @keyframes people-0 {
     0%{opacity: 0}
-    40%{opacity: 0}
     100%{opacity: 1}
 }
 
 .star{
     position: absolute;
-    top: 0.4rem;
+    top: 0.2rem;
     left:.05rem;
     width: 0.84rem;
     animation: star-0 infinite;
-    animation-duration: 8s;
+    animation-duration: 3s;
 }
 @keyframes star-0 {
     0%{
         opacity: 0;
     }
     50%{
-        opacity:.8;
+        opacity:.6;
     }
     100%{
         opacity:0;}
@@ -147,19 +153,19 @@
 }
 .belt1{
     position: absolute;
-    top:.6rem;
+    top:.64rem;
     right: 0;
     width: 0.77rem;
 }
 .belt2{
     position: absolute;
-    top:.6rem;
+    top:.64rem;
     right: 0;
     width: 0.77rem;
 }
 .belt3{
     position: absolute;
-    top: .6rem;
+    top: .4rem;
     left: 0;
     width:.32rem;
 }
@@ -169,7 +175,8 @@
     left: .5rem;
     width: .4rem;
     z-index: 3;
-    animation: text-0 5s;
+    animation: text-0 5s 1;
+    /*animation: text-1 infinite;*/
 }
 @keyframes text-0 {
     0%{
@@ -183,12 +190,31 @@
         left:.5rem;
     }
 }
+@keyframes text-1 {
+    0%{
+        left:.5rem;}
+    50%{
+        left:.45rem;}
+    75%{
+        left:.55rem;
+    }
+    100%{
+        left:.5rem;
+    }
+}
 .textshadow{
     position: absolute;
-    top: 1.1rem;
-    left: .7rem;
-    width: .4rem;
+    top: .8rem;
+    left: .24rem;
+    width: .746rem;
+    /*opacity: 0;*/
+    /*animation: textshadow-0 3s;*/
+    /*animation-delay: 3s;*/
 }
+/*@keyframes textshadow-0 {*/
+    /*from{opacity: 0}*/
+    /*to{opacity: 1}*/
+/*}*/
 
 .buliding{
     position: absolute;
@@ -197,7 +223,7 @@
 }
 .bulidshadow{
     position: absolute;
-    top:1.2rem;
+    top:1.26rem;
     left:.35rem;
     width: 0.236rem;
     animation: bulidshadow-0 infinite;
