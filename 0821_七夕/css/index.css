@@ -10,22 +10,32 @@
     height:1.792rem;
     background: linear-gradient(to bottom,rgb(146,65,237),rgb(198,90,249));
 }
+.logo{
+    position: absolute;
+    width: .27rem;
+    left:.38rem;
+    top:0;
+    transform-origin: 0 -.05rem;
+    animation: logo-0 infinite;
+    /*animation-delay: 3s;*/
+    animation-duration: 4s;
+    animation-direction: alternate;
+}
+@keyframes logo-0 {
+    0%{transform: rotate(-10deg)}
+    100%{transform: rotate(10deg)}
+}
+
 .jump{
     position: absolute;
     top:.05rem;
     right:.06rem;
-    height: .08rem;
-    width: .14rem;
-    font:bold .03rem/.08rem SimHei;
-    text-align: center;
-    color: rgba(255,255,255,.8);
-    background-color: rgba(0,0,0,.2);
-    border-radius: 10px;
+    width: .123rem;
 }
 .qi{
     position: absolute;
     top:-.05rem;
-    left:0.1rem;
+    left:0.08rem;
     width: 0.39rem;
     z-index: 2;
     animation: circle-qi 2s;
@@ -44,7 +54,7 @@
 }
 .xi{
     position: absolute;
-    top:-.05rem;
+    top:-.02rem;
     left: .5rem;
     width: 0.436rem;
     z-index: 2;
@@ -63,16 +73,16 @@
         top:-1rem;}
     30%{
         top:-1rem;}
-    90%{
-        top:-.05rem;}
+    80%{
+        top:-.02rem;}
     95%{
         top:-.15rem;}
     100%{
-        top:-.05rem;}
+        top:-.02rem;}
 }
 .people{
     position: absolute;
-    top:0.5rem;
+    top:0.4rem;
     left:0.4rem;
     width: 0.192rem;
     z-index: 3;
@@ -80,8 +90,9 @@
 
 }
 @keyframes people-0 {
-    0%{transform: scale(0.1,0.1)}
-    100%{transform: scale(1,1)}
+    0%{opacity: 0}
+    40%{opacity: 0}
+    100%{opacity: 1}
 }
 
 .star{
@@ -104,8 +115,8 @@
 }
 .heart1{
     position: absolute;
-    top: .45rem;
-    left: .08rem;
+    top: .25rem;
+    left: .106rem;
     width: .1rem;
     animation: heart-1 infinite;
     animation-duration: 4s;
@@ -120,8 +131,8 @@
 }
 .heart2{
     position: absolute;
-    top: .50rem;
-    right: .03rem;
+    top: .33rem;
+    right: .186rem;
     width: .06rem;
     animation: heart-1 infinite;
     animation-duration: 5s;

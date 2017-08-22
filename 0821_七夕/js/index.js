@@ -8,14 +8,14 @@ var autoSetRem = (function(doc, win) {
             }
             var clientWidth = docEl.clientWidth || win.innerWidth || screen.width;
             if (!clientWidth) return;
-            docEl.style.fontSize = 750 * (clientWidth / paper) + 'px';
+            docEl.style.fontSize = 750*(clientWidth / paper) + 'px';
             done = true;
             return done;
         };
     return {
         set:set
     };
-    //AbortifbrowserdoesnotsupportaddEventListener
+    //Abort if browserdoesnotsupportaddEventListener
     if (!doc.addEventListener) return;
     win.addEventListener(resizeEvt, set, false);
     doc.addEventListener('DOMContentLoaded', set, false);

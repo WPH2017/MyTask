@@ -91,11 +91,15 @@ search.focus(function () {
         "right":0,
         "border-bottom-color": "#292f34"
     });
+    searchbox.mouseleave(null);
 });
 search.blur(function () {
     search.parent().css({
         "right":-220,
         "border-bottom-color": "transparent"
+    });
+    searchbox.mouseleave(function () {
+        search.parent().animate({"right":-220,"border-bottom-color":"transparent"},300);
     });
 });
 

@@ -11,3 +11,10 @@
 .right{
     float: right;
 }
+.content{
+    overflow: hidden;
+}
+.addit{
+    position: absolute;
+    left:300px;
+}

@@ -34,7 +34,8 @@ $('#login').click(function () {
                         localStorage.setItem(prop,data[prop]);
                     }
                 }
-                location="index.html";
+                //如有hash值，则跳转到hash
+                location.href=location.hash?location.hash.substr(10):"index.html";
             }else{
                 $('.tip').html(response.message).css("color","red");
             }
@@ -43,10 +44,11 @@ $('#login').click(function () {
 });
 
 
-//登录页面检测是否已登录
+// 登录页面检测是否已登录
 // if(localStorage.getItem("token")){
 //     $('body').html("用户："+localStorage.getItem("username")+"你好，你已经成功登录，3秒后将为你跳转到首页");
 //     setTimeout(function () {
 //         location.href="index.html";
 //     },3000);
 // }
+
