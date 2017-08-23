@@ -79,7 +79,8 @@ $.ajax({
     }
 });
 
-//检测登录状态并退出登录
+
+//4. 检测登录状态，如登录了则设置退出登录的跳转
 if(localStorage.getItem("token")){
     var loginbar=$('.login');
     loginbar.html("<a href='#'>"+ localStorage.getItem("username") +"</a>&nbsp;&nbsp;<a href='#' class='cancle'>退出登录</a>");

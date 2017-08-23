@@ -31,6 +31,7 @@ body{
     top:.04rem;
     right:.04rem;
     width: .123rem;
+    z-index:10;
 }
 .qi{
     position: absolute;

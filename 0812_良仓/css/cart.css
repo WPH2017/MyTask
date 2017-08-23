@@ -1,11 +1,22 @@
 .step{
     position: relative;
     width: 400px;
-    margin:0 auto;
+    margin:20px auto;
+    overflow: hidden;
 }
 .step li{
     float: left;
-    width: 120px;
+    padding:0 30px;
+    font-size: 13px;
+    text-align: center;
+}
+.step li:first-of-type{
+    color: #0c6eba;
+    background-color: #eee;
+}
+.step li:nth-of-type(2){
+    border:1px solid #5c5c5c;
+    border-width: 0 1px;
 }
 .cart-table{
     width: 100%;
@@ -56,6 +67,9 @@
 .cart-table tr td:first-of-type,.cart-table tr td:nth-of-type(2){
     text-align: left;
 }
+.cart-table td>input[type="checkbox"]{
+    float: left;
+}
 .cart-table .item button{
     color: #6c6c6c;
     width: 12px;
@@ -85,6 +99,7 @@
     background-color: #7fa6c5;
     outline:0;
     border: 0;
+    cursor: pointer;
 }
 .summary .continue{
     display: block;

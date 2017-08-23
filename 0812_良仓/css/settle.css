@@ -1,0 +1,180 @@
+.cart-head{
+    width: 1000px;
+    height: 315px;
+}
+.step{
+    position: relative;
+    width: 400px;
+    margin:20px auto;
+    overflow: hidden;
+}
+.step li {
+    float: left;
+    padding: 0 30px;
+    font-size: 13px;
+    text-align: center;
+}
+.step li:nth-of-type(2){
+    color: #0c6eba;
+    background-color: #eee;
+    border:1px solid #5c5c5c;
+    border-width: 0 1px;
+}
+.s-title{
+    margin-bottom:10px;
+    width: 100%;
+    font-size: 16px;
+    padding: 3px 0px;
+    color: #333;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 1px solid #999;
+}
+.s-title img.add-plus{
+    float: right;
+    cursor: pointer;
+}
+.every-had{
+    height:30px;
+    border-bottom: 1px solid #999;
+}
+.every-had input[type=radio]{
+    display: block;
+    float: left;
+    margin:9px 10px;
+}
+.every-had li{
+    float: left;
+    margin-right:20px;
+    font-size:13px;
+    line-height:30px;
+    color: #777;
+}
+.every-had img.add-minus{
+    float: right;
+    cursor: pointer;
+}
+.new-every{
+    position: relative;
+    float: left;
+    width: 350px;
+    margin-top:20px;
+}
+.new-cancle{
+    position: absolute;
+    top:0;
+    right:80px;
+    width: 14px;
+    height: 14px;
+    line-height:14px;
+    text-align: center;
+    font-size:14px;
+    cursor: pointer;
+    background-color: #eee;
+}
+.content span{
+    display: inline-block;
+    width: 80px;
+    font-size:13px;
+    color: #777;
+}
+.address{
+    line-height: 40px;
+    margin-bottom:40px;
+    overflow: hidden;
+}
+.save-address{
+    display: inline-block;
+    margin-left:80px;
+    width: 94px;
+    height: 25px;
+    background: #7fa6c5;
+    line-height: 25px;
+    text-align: center;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 100;
+    border: none;
+    outline:none;
+    cursor: pointer;
+}
+.content input[type=text]{
+    padding: 0px 5px;
+    height: 24px;
+    width: 150px;
+    border: 2px #dedede solid;
+    outline:none;
+    transition: .5s;
+    text-overflow: ellipsis;
+}
+.content input:focus{
+    border-color:#0c6eba;
+}
+.content .add-address:focus{
+    width: 240px;
+    border-color:#0c6eba;
+}
+.content .address select{
+    padding: 0px 5px;
+    height: 24px;
+    width: 90px;
+    border: 2px #dedede solid;
+    outline: none;
+}
+.content .address select:active{
+    border-color:#0c6eba;
+}
+
+.goodsform{
+    margin-bottom: 20px;
+}
+.cart-item{
+    overflow: hidden;
+    border-bottom:1px solid #ccc;
+}
+.cart-item img{
+    display: block;
+    margin:9px 0;
+    float: left;
+    width: 72px;
+    height: 72px;
+}
+.cart-item li{
+    float: left;
+    margin:0 40px;
+    height: 90px;
+    line-height:90px;
+    font-size:12px;
+    color: #777;
+}
+
+
+.notice input[type=text]{
+    margin-left:-40px;
+    width: 350px;
+}
+.voucher{
+    margin:20px 0;
+    line-height:30px;
+}
+.voucher button{
+    border: none;
+    width: 80px;
+    height: 29px;
+    background: #80a6c4;
+    color: #fff;
+    text-align: center;
+    outline:none;
+    cursor: pointer;
+    margin-left: 7px;
+}
+.voucher .vou-number{
+    float: right;
+    width: 130px;
+}
+.summary{
+    text-align: right;
+}
+.settleway{
+    text-align: center;
+}
