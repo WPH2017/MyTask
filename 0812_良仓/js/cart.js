@@ -9,11 +9,12 @@ $(function () {
             "token":localStorage.getItem("token")
         },
         "success":function (response) {
+            console.log(response)
             if(response.data.length>0){
                 //循环加载模板字面量
                 for(var i=0;i<response.data.length;i++){
                     var obj=response.data[i];
-                    var html=`<tr class="item">
+                    var html=`<tr class="item" data-id="${obj.goods_id}">
                             <td>
                                 <input type="checkbox">
                                 <img src="${obj.goods_thumb}" alt="">
@@ -104,16 +105,30 @@ $(function () {
                 sum.html("￥"+temp);
             }
 
-            //删除当前所在的父元素
+            //删除当前商品
             $('.cart-delete').each(function(){
                 $(this).click(function () {
                     if(!confirm("确定要删除当前商品吗？")) return;
-                    //删除不彻底
-                    $(this).parent().parent().html("").remove();
-                //    暂时不修改购物车
+                    var aim=$(this);
+                    console.log($(this).parent().parent().attr("data-id"));
+                    $.ajax({
+                        "type":"POST",
+                        "url":"http://h6.duchengjiu.top/shop/api_cart.php?token="+localStorage.getItem("token"),
+                        "data":{
+                            // "token":localStorage.getItem("token"),
+                            "goods_id":$(this).parent().parent().attr("data-id"),
+                            "number":0,
+                            // "user_id":localStorage.getItem("user_id")
+                        },
+                        "success":function (response) {
+                            aim.parent().parent().remove();
+                            location.reload();
+                        }
+                    });
                 })
             })
 
+            //
             // function updateSummary(array) {
             //     var sum=$('.number','.summary');
             //     var temp=0;
@@ -138,5 +153,27 @@ $('button.submit').click(function () {
         //选择不跳转就不执行下面
         return;
     }
-    location.href="settle.html";
+    //确定购物车
+    //1. 删除没有选中的商品
+    $('.goodsamount').each(function () {
+        //没选中的商品
+        if(!$(this).parent().find('input:checkbox').is(':checked')){
+            $.ajax({
+                "type":"POST",
+                "url":"http://h6.duchengjiu.top/shop/api_cart.php?token="+localStorage.getItem("token"),
+                "data":{
+                    "goods_id":$(this).parent().attr("data-id"),
+                    "number":0
+                },
+                "success":function (response) {
+                    console.log("删除一个商品");
+                    // location.reload();
+                }
+            });
+        }
+    });
+    //2. 本地存储总价
+    localStorage.setItem("summary",$('.number','.summary').html());
+    //跳转
+    location.href="settle.html#callback="+location.href;
 });

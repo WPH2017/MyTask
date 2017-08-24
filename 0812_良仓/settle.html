@@ -18,11 +18,11 @@
             <ul>
                 <li class="login"><a href="./mobilelogin.html">登录 </a>&nbsp;&nbsp;<a href="register.html">注册</a></li>
                 <li class="line"></li>
-                <li class="sub">购物车
+                <li class="sub"><a href="cart.html">购物车</a>
                     <div class="subnav subnav1">
-                        <div class="card1">你的购物车暂时没有商品...</div>
+                        <div class="card1 card-cart"></div>
                         <a href="javascript:void(0)">
-                            <div class="card2">快去抢购良仓商品吧！</div>
+                            <div class="card2"></div>
                         </a>
                     </div>
                 </li>
@@ -181,7 +181,7 @@
             -->
         </div>
         <div class="goodsform">
-            <p class="s-title">订单详情</p>
+            <p class="s-title">订单详情 <a href="cart.html">返回修改订单</a></p>
 
         </div>
         <div class="notice">
@@ -192,19 +192,22 @@
             <span>激活代金券</span>
             <input type="text" placeholder="请输入代金券">
             <button>确认使用</button>
-            <a href="">代金券使用方式</a>
+            <a href="javascript:" class="voucher-text">代金券使用方式
+
+            </a>
             <span class="vou-number">代金券减免 -0.00元</span>
         </div>
         <div class="summary">
-            <span>付款总额：</span><span>￥0.00</span><br>
+            <span>付款总额：</span><span class="sum-number">￥0.00</span><br>
             <span>为您节省 0.00元</span><br>
             <span>(含¥0.00礼物包装费)</span>
         </div>
         <div class="settleway">
-            <span>结算方式</span><br>
-            <input type="radio"><img src="" alt="">
+            <span>支付方式</span><br>
+            <input type="radio" name="pay"><img src="./img/pay-zfb.png" alt="">
+            <input type="radio" name="pay"><img src="./img/pay-wx.png" alt="">
             <p>若您遇到支付问题，请联系客服热线 400 897 6336（工作日 09:00-18:00）</p>
-            <button>结算</button>
+            <button class="order-confirm">结算</button>
         </div>
 
     </div>

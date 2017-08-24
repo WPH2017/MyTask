@@ -1,15 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>详情</title>
+    <title>订单详情页</title>
+    <link href="./img/favicon.png" rel="shortcut icon">
     <link rel="stylesheet" href="./css/all.css">
-    <link rel="stylesheet" href="./css/detail.css">
+    <link rel="stylesheet" href="./css/order.css">
     <script src="./js/jquery-1.12.3.min.js"></script>
 </head>
+
 <body>
 <div class="header-box">
     <div class="header">
@@ -20,7 +22,14 @@
                 <li class="line"></li>
                 <li class="sub"><a href="cart.html">购物车</a>
                     <div class="subnav subnav1">
-                        <div class="card1 card-cart"></div>
+                        <div class="card1 card-cart">
+                            <!--你的购物车暂时没有商品...-->
+                            <!--<div class="card-cart-item" data-id="${data.goods_id}">-->
+                                <!--<a href="detail.html?id=${data.goods_id}"><img src="${data.goods_thumb}" alt=""></a>-->
+                                <!--<a href="detail.html?id=${data.goods_id}">${data.goods_name}</a><br>-->
+                                <!--数量：${data.goods_number}件<span class="card-amount">￥${data.goods_number*data.goods_price}</span>-->
+                            <!--</div>-->
+                        </div>
                         <a href="javascript:void(0)">
                             <div class="card2"></div>
                         </a>
@@ -168,33 +177,9 @@
 </div>
 <div class="content-box">
     <div class="content">
-        <p class="dir">良仓 > 女士 > </p>
-        <div class="left">
-            <div class="main">
-                <!--<div class="picChange">-->
-                    <!--<img src="" alt="" class="ban">-->
-                    <!--<div class="scroll"></div>-->
-                <!--</div>-->
-                <!--<div class="detail">-->
-                    <!--<p class="brand"></p>-->
-                    <!--<p class="name"></p>-->
-                    <!--<p class="price"></p>-->
-                    <!--<p class="discount"></p>-->
-                    <!--<div class="sign"></div>-->
-                    <!---->
-                <!--</div>-->
-                <input type="text" class="searchid" placeholder="您可以输入商品id进行搜索">
-                <input type="button" value="搜索">
-                <!--用于展示结果-->
-                <div class="result"></div>
-
-                <button class="buyit">立即购买</button>
-                <button class="addit">加入购物车</button>
-                <button class="shareit">分享</button>
-            </div>
+        <div class="order-table">
+            <h1>订单信息</h1>
         </div>
-        <div class="right"></div>
-
     </div>
 </div>
 <div class="bottom-content-box">
@@ -253,5 +238,5 @@
 </div>
 </body>
 <script src="./js/all.js"></script>
-<script src="./js/detail.js"></script>
+<script src="./js/order.js"></script>
 </html>

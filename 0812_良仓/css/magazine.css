@@ -24,7 +24,35 @@
     line-height:20px;
     text-align: center;
 }
-
+.mag-box{
+    margin-bottom:20px;
+    overflow: hidden;
+}
+.pager{
+    font-size: 12px;
+    text-align: right;
+}
+.pager a{
+    display: inline-block;
+    padding:0 6px;
+    margin:4px;
+    background-color: #eee;
+}
+.pager button{
+    width: 50px;
+    height: 20px;
+    color: #fff;
+    background-color: #7fa6c5;
+    outline:0;
+    border: 0;
+    cursor: pointer;
+}
+#pager-head{
+    background-color: #2751d7;
+}
+.pager input{
+    width: 26px;
+}
 .magbox{
     float:left;
     margin:25px 0 0 23px;

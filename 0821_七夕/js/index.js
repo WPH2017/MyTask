@@ -30,6 +30,15 @@ oBtn.onclick=function () {
 
     //改变btn
     this.className="btn change";
+    //改变bk
+    var oBk=document.getElementsByClassName("bk")[0];
+    oBk.className="bk bkchange";
+    //改变框
+    var oEnvelop=document.getElementsByClassName("envelop")[0];
+    console.log(oEnvelop)
+    oEnvelop.className="envelop enchange";
+    var oWord=document.getElementsByClassName("word")[0];
+    oWord.className="word wochange";
 
     this.onclick=null;
 };

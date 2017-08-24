@@ -147,7 +147,9 @@
     font-size:12px;
     color: #777;
 }
-
+.cart-item li:first-of-type{
+    width:600px;
+}
 
 .notice input[type=text]{
     margin-left:-40px;
@@ -175,6 +177,35 @@
 .summary{
     text-align: right;
 }
+/*此处css不起作用*/
+/*.content .summary .sum-number{*/
+    /*font-size: 16px;*/
+    /*color: #2751d7;*/
+/*}*/
 .settleway{
     text-align: center;
+    line-height: 50px;
+}
+.settleway span{
+    display: inline;
+}
+.settleway span::before,.settleway span::after{
+    content: '—————';
+}
+.settleway p{
+    font-size:12px;
+    color: #0B71A2;
+}
+.order-confirm{
+    display: inline-block;
+    margin-top: 5px;
+    width: 168px;
+    height: 30px;
+    color: #fff;
+    line-height: 30px;
+    vertical-align: middle;
+    text-align: center;
+    background: #7fa6c5;
+    border: none;
+    outline:none;
 }

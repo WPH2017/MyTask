@@ -12,6 +12,19 @@ $(function () {
             var data=response.data;
             for(var i=0;i<data.length;i++){
                 var json=data[i];
+                //列表第一个默认选中
+                if(i==0){
+                    html+=`
+                    <ul class="every-had" data-id="${json.address_id}">
+                            <input type="radio" name="choose" checked>
+                            <li>收货人姓名：${json.address_name}</li>
+                            <li>收货地址：${json.province} ${json.city} ${json.address}</li>
+                            <li>手机：${json.mobile}</li>
+                            <img src="./img/minus.png" alt="" class="add-minus">
+                    </ul>
+                `;
+                    continue;
+                }
                 html+=`
                     <ul class="every-had" data-id="${json.address_id}">
                             <input type="radio" name="choose">
@@ -23,22 +36,85 @@ $(function () {
                 `;
             }
             $('.address').append(html);
+
             //删除按钮删除地址
             $('.add-minus').click(function () {
                 if(!confirm("是否要删除本条地址")) return;
+                var aim=$(this);
                 $.ajax({
                     "type":"GET",
-                    "url":"http://h6.duchengjiu.top/shop/api_useraddress.php?status=delete&address_id="+$(this).parent().attr("data-id"),
+                    "url":"http://h6.duchengjiu.top/shop/api_useraddress.php",
                     "data":{
-                        "token":localStorage.getItem("token")
+                        "token":localStorage.getItem("token"),
+                        "status":"delete",
+                        "address_id":$(this).parent().attr("data-id")
                     },
-                    "success":function (response) {
-                        console.log($(this).parent())
-                        $(this).parent().remove();
+                    "success":function () {
+                        aim.parent().remove();
                     }
                 });
 
             });
+
+            //订单加载
+            $.ajax({
+                "type":"GET",
+                "url":"http://h6.duchengjiu.top/shop/api_cart.php",
+                "data":{
+                    "token":localStorage.getItem("token")
+                },
+                "success":function (response) {
+                    var html="";
+                    for(var i=0;i<response.data.length;i++){
+                        var data=response.data[i];
+                        html+=`
+                    <ul class="cart-item" data-id="">
+                        <img src="${data.goods_thumb}" alt="">
+                        <li><a href="detail.html?id=${data.goods_id}">${data.goods_name}</a></li>
+                        <li>x${data.goods_number}</li>
+                        <li>￥${data.goods_number*data.goods_price}</li>
+                    </ul>
+                `
+                    }
+                    $('.goodsform').append(html);
+
+                    //设置订单总价
+                    $('.sum-number').html(localStorage.getItem("summary")).css({
+                        fontSize:20,
+                        color:"#2751d7",
+                        fontWeight:"bold"
+                    });
+
+                    //绑定结算
+                    $('.order-confirm').click(function () {
+                        var address_id;
+                        $('.every-had').each(function () {
+                            console.log(1)
+                            console.log($(this).find('input:radio'))
+                            if($(this).find('input:radio').is(':checked')){
+                                address_id=$(this).attr('data-id');
+                            }
+                        });
+                        if(!address_id) return alert("还未选择收货地址，请选择！");
+                        if(!confirm("确定提交本订单吗？")) return;
+                        $.ajax({
+                            'type':'POST',
+                            'url':'http://h6.duchengjiu.top/shop/api_order.php?token='+localStorage.getItem("token")+'&status=add',
+                            'data':{
+                                'address_id':address_id,
+                                'total_prices':1*(localStorage.getItem('summary').match(/\w+/))
+                            },
+                            'success':function (response) {
+                                alert(response.message+',点击后两秒跳转到订单详情页');
+                                localStorage.setItem("summary","￥0.00");
+                                setInterval(function () {
+                                    location.href="order.html";
+                                },2000);
+                            }
+                        })
+                    });
+                }
+            })
         }
     });
 
@@ -164,28 +240,3 @@ $('.add-plus').click(function () {
     });
 });
 
-//订单加载
-$(function () {
-    $.ajax({
-        "type":"GET",
-        "url":"http://h6.duchengjiu.top/shop/api_cart.php",
-        "data":{
-            "token":localStorage.getItem("token")
-        },
-        "success":function (response) {
-            var html="";
-            for(var i=0;i<response.data.length;i++){
-                var data=response.data[i];
-                html+=`
-                    <ul class="cart-item" data-id="">
-                        <img src="${data.goods_thumb}" alt="">
-                        <li><a href="detail.html?id=${data.goods_id}">${data.goods_name}</a></li>
-                        <li>x${data.goods_number}</li>
-                        <li>￥${data.goods_number*data.goods_price}</li>
-                    </ul>
-                `
-            }
-            $('.goodsform').append(html);
-        }
-    })
-});

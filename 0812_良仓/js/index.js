@@ -128,9 +128,10 @@ search.change(function (){
 //3. 主体数据导入
 $('.loading').css("display","block");
 $.ajax({
-    "url":"http://h6.duchengjiu.top/shop/api_goods.php",
+    "url":"http://h6.duchengjiu.top/shop/api_goods.php?page=1&pagesize=21",
     "type":"GET",
     "success":function(json){
+        // console.log(json)
         $('.loading').css("display","none");
         var html="";
         // setTimeout(function(){

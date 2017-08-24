@@ -32,9 +32,9 @@ $(window).scroll(function () {
 
 });
 
-//3. 数据初始化部分
+//3. 数据初始化
 var magazineClassList={};//用于生成类别名称和id的映射字典
-
+//3.magzine类别字典生成
 $.ajax({
     "url":"http://h6.duchengjiu.top/shop/api_cat.php",
     "type":"GET",
@@ -51,7 +51,7 @@ $.ajax({
     }
 });
 
-//share链接导入
+//3.2share链接导入
 $.ajax({
     "url":"http://h6.duchengjiu.top/shop/api_cat.php",
     "type":"GET",
@@ -79,13 +79,45 @@ $.ajax({
     }
 });
 
-
-//4. 检测登录状态，如登录了则设置退出登录的跳转
+//4.1 检测登录状态，如登录了则设置退出登录的跳转
 if(localStorage.getItem("token")){
     var loginbar=$('.login');
     loginbar.html("<a href='#'>"+ localStorage.getItem("username") +"</a>&nbsp;&nbsp;<a href='#' class='cancle'>退出登录</a>");
     $('.cancle').click(function(){
        localStorage.clear();
        loginbar.html("<a href=\"./mobilelogin.html\">登录 </a>&nbsp;&nbsp;<a href=\"register.html\">注册</a>");
+       location.reload();
     });
 }
+
+//4.2 导入购物车信息
+$.ajax({
+    "type":"GET",
+    "url":"http://h6.duchengjiu.top/shop/api_cart.php",
+    "data":{
+        "token":localStorage.getItem("token")
+    },
+    "success":function (response) {
+        var json=response.data;
+        var html='';
+        if(response.code!==0){
+            $('.card-cart').html('你的购物车暂时没有商品...');
+            $('.card2').html('快去抢购良仓商品吧！');
+            $('.card2').parent().attr('href','javascript:');
+            return;
+        }
+        $('.card2').html('查看我的购物车');
+        $('.card2').parent().attr('href','cart.html');
+        for(var i=0;i<json.length;i++){
+            data=json[i];
+            html+=`
+            <div class="card-cart-item" data-id="${data.goods_id}">
+                <a href="detail.html?id=${data.goods_id}"><img src="${data.goods_thumb}" alt=""></a>
+                <a href="detail.html?id=${data.goods_id}">${data.goods_name}</a><br>
+                数量：${data.goods_number}件<span class="card-amount">￥${data.goods_number*data.goods_price}</span>
+            </div>
+        `;
+        }
+        $('.card-cart').append(html);
+    }
+});

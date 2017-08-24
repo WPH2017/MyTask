@@ -32,14 +32,23 @@
     height: 50px;
     cursor: pointer;
     border-radius: 50%;
-    background-color: rgba(0, 0, 0, 0.40);
+
     /*display: none;*/
 }
 .carousel .left-arrow{
     left:20px;
+    background: url("../img/arrow-left.png") no-repeat;
+    background-color: rgba(0, 0, 0, 0.40);
+    background-position: 14px 9px;
 }
 .carousel .right-arrow{
     right:20px;
+    background: url("../img/arrow-right.png") no-repeat;
+    background-color: rgba(0, 0, 0, 0.40);
+    background-position: 18px 9px;
+}
+.carousel .left-arrow:hover,.carousel .right-arrow:hover{
+    opacity: .5;
 }
 .carousel .pick{
     position: relative;

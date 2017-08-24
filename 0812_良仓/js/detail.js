@@ -18,7 +18,6 @@ $(function () {
     //     return $1;
     // });
 
-    $("h1").html("您当前的商品类别id为："+valueJson.goods_id);
     $.ajax({
         "url":"http://h6.duchengjiu.top/shop/api_goods.php?goods_id="+valueJson.goods_id,
         "type":"GET",
@@ -33,7 +32,7 @@ $(function () {
                 $(".result").html("");
                 $(".result").append($('<img src="'+data.goods_thumb+'"/><p>'+data.goods_name+'</p><p>'
                     +data.goods_desc+'</p>' +'</p><p>价格：'+data.price+'元</p>'
-                    +'</p><p>当前库存：'+data.goods_number+'</p>'));
+                    +'</p><p>数量：</p>'));
             }else{
                 $(".result").append($("<p>本次搜索无效，请重新输入</p>").css("color","red"));
             }
@@ -74,26 +73,29 @@ $(function () {
 
     });
 
-    //
+    //加入购物车
     $('.addit').click(function () {
         if(!localStorage.getItem("token")){
             alert("您还未登录请在跳转的页面进行登录操作！");
             location.href="login.html#callback="+location.href;
-        }else{
-            var num=localStorage.getItem("goods_number");
-            num=num?num+1:1;
-            $.ajax({
-                "type":"POST",
-                "url":"http://h6.duchengjiu.top/shop/api_cart.php?token="+localStorage.getItem('token'),
-                "data":{
-                    "goods_id":localStorage.getItem("now-goods"),
-                    "goods_number":num,
-                },
-                "dataType":"json",
-                "success":function (response) {
-                    console.log(response);
-                }
-            })
+            return;
         }
+        //提交购物信息
+        var num=1*localStorage.getItem("cart_"+localStorage.getItem("now-goods"));
+        num=num?(num+1):1;
+        console.log(num);
+        $.ajax({
+            "type":"POST",
+            "url":"http://h6.duchengjiu.top/shop/api_cart.php?token="+localStorage.getItem('token'),
+            "data":{
+                "goods_id":localStorage.getItem("now-goods"),
+                "number":num,
+            },
+            "success":function (response) {
+                console.log(response);
+                localStorage.setItem("cart_"+localStorage.getItem("now-goods"),num)
+            }
+        })
+
     })
 });

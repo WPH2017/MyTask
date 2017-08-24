@@ -1,0 +1,29 @@
+.order-table{
+
+}
+.order-item{
+    margin: 40px 0;
+    background-color: #eee;
+}
+.order-item h3{
+    text-align: center;
+}
+.cart-item{
+    overflow: hidden;
+    border-bottom: 1px solid #eee;
+}
+.cart-item img{
+    float: left;
+    width: 70px;
+    margin-right:20px;
+}
+.cart-item li{
+    float: left;
+    margin-right:20px;
+}
+.cart-item li:first-of-type{
+    width: 600px;
+}
+.order-item p{
+    line-height: 28px;
+}

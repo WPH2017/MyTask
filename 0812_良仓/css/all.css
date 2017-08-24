@@ -136,17 +136,32 @@ i{
 }
 .h-nav .subnav1{
     width: 320px;
-
 }
 .h-nav .subnav1 .card1{
     width: 100%;
-    height: 70px;
     line-height: 70px;
     background-color: #292F34;
     text-align: center;
     font-size: 14px;
     color: #fff;
 }
+.h-nav .subnav1 .card1 .card-cart-item{
+    width: 94%;
+    height: 95px;
+    line-height:20px;
+    padding-right:-10px;
+    text-align: left;
+}
+.card-cart-item img{
+    float: left;
+    margin:10px 20px 0 10px;
+    width: 64px;
+}
+.card-cart-item .card-amount{
+    display: block;
+    float: right;
+}
+
 .h-nav .subnav1 .card2{
     width: 100%;
     height: 50px;

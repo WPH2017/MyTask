@@ -9,10 +9,13 @@ body{
     margin: 0 auto;
     width:1rem;
     height:1.792rem;
-    background: linear-gradient(to bottom,rgb(146,65,237),rgb(198,90,249));
+    background: linear-gradient(to bottom,rgb(0,0,70),rgb(198,90,249));
+    /*background: linear-gradient(to bottom,rgb(146,65,237),rgb(198,90,249));*/
 }
 .bk{
     width: 1rem;
+}
+.bk.bkchange{
     animation:bk-0 6s;
     animation-fill-mode: forwards;
 }
@@ -45,24 +48,59 @@ body{
     width: .123rem;
     z-index:10;
 }
+
+.envelop{
+    position: absolute;
+    width: .767rem;
+    left:.13rem;
+    top:.4rem;
+    z-index:3;
+}
+.envelop.enchange{
+    animation:envelop-1 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes envelop-1 {
+    from{opacity: 1}
+    to{opacity: 0}
+}
+
+.word{
+    position: absolute;
+    width: .666rem;
+    left:.166rem;
+    top:.5rem;
+    opacity: 0;
+    z-index:3;
+    animation: word-0 3s;
+    animation-fill-mode: forwards;
+}
+@keyframes word-0 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+.word.wochange{
+    animation:word-1 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes word-1 {
+    from{opacity: 1}
+    to{opacity: 0}
+}
 .qi{
     position: absolute;
     top:-.05rem;
     left:0.08rem;
     width: 0.39rem;
     z-index: 2;
-    animation: circle-qi 2s;
+    animation: circle-qi 2s cubic-bezier(0.76, 1.74, 0.79, 0.59);
     /*transform-origin: -.1rem -.2rem;*/
     /*animation-duration: 2s;*/
 }
 @keyframes circle-qi {
-    0%{
+    from{
         top:-1rem;}
-    70%{
-        top:-.05rem;}
-    90%{
-        top:-.15rem;}
-    100%{
+    to{
         top:-.05rem;}
 }
 .xi{
@@ -72,7 +110,7 @@ body{
     width: 0.436rem;
     z-index: 2;
     /*transform-origin: -.1rem -.2rem;*/
-    animation: circle-xi 3s;
+    animation: circle-xi 3s cubic-bezier(0.76, 1.74, 0.79, 0.59);
     /*animation-duration: 5s;*/
 }
 /*@keyframes circle-xi {*/
@@ -82,22 +120,22 @@ body{
 /*}*/
 
 @keyframes circle-xi {
-    0%{
+    from{
         top:-1rem;}
-    30%{
-        top:-1rem;}
-    80%{
-        top:-.02rem;}
-    95%{
-        top:-.15rem;}
-    100%{
-        top:-.02rem;}
+    to{top:-.04rem;}
 }
 .qixishadow{
     position: absolute;
     top: 0.2rem;
     left:.05rem;
     width: 0.96rem;
+    opacity: 0;
+    animation: qixisha-0 5s 2s;
+    animation-fill-mode: forwards;
+}
+@keyframes qixisha-0 {
+    from{opacity: 0}
+    to{opacity: 1}
 }
 .people{
     position: absolute;
@@ -106,8 +144,7 @@ body{
     width: 0.192rem;
     z-index: 3;
     opacity: 0;
-    animation: people-0 5s;
-    animation-delay:3s;
+    animation: people-0 5s 5s;
     animation-fill-mode: forwards;
 }
 @keyframes people-0 {
@@ -170,7 +207,9 @@ body{
     top:.64rem;
     right: 0;
     width: 0.77rem;
-    animation: belt1-0 3s;
+    opacity:0;
+    animation: belt1-0 3s 1s;
+    animation-fill-mode: forwards;
 }
 @keyframes belt1-0 {
     from{opacity:0;right:-0.77rem}
@@ -181,7 +220,9 @@ body{
     top:.64rem;
     right: 0;
     width: 0.77rem;
-    animation: belt2-0 3s;
+    opacity:0;
+    animation: belt2-0 3s 2s;
+    animation-fill-mode: forwards;
 }
 @keyframes belt2-0 {
     from{opacity:0;right:-0.77rem}
@@ -192,7 +233,9 @@ body{
     top: .4rem;
     left: 0;
     width:.32rem;
-    animation: belt3-0 3s;
+    opacity:0;
+    animation: belt3-0 3s 2s;
+    animation-fill-mode: forwards;
 }
 @keyframes belt3-0 {
     from{opacity:0;left:-0.32rem}
@@ -201,10 +244,11 @@ body{
 .text{
     position: absolute;
     top: 1.1rem;
-    left: .5rem;
+    left: 1rem;
     width: .4rem;
     z-index: 3;
-    animation: text-0 5s 1;
+    animation: text-0 5s 3s;
+    animation-fill-mode: forwards;
     /*animation: text-1 infinite;*/
 }
 @keyframes text-0 {
@@ -234,16 +278,16 @@ body{
 .textshadow{
     position: absolute;
     top: .8rem;
-    left: .24rem;
+    right: 0rem;
     width: .746rem;
-    /*opacity: 0;*/
-    /*animation: textshadow-0 3s;*/
-    /*animation-delay: 3s;*/
+    opacity: 0;
+    animation: textshadow-0 3s 3s;
+    animation-fill-mode: forwards;
 }
-/*@keyframes textshadow-0 {*/
-    /*from{opacity: 0}*/
-    /*to{opacity: 1}*/
-/*}*/
+@keyframes textshadow-0 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
 
 .buliding1{
     position: absolute;
@@ -289,20 +333,20 @@ body{
 }
 .bulidshadow{
     position: absolute;
-    top:1.26rem;
-    left:.35rem;
+    top:1.2rem;
+    left:.37rem;
     width: 0.236rem;
+    opacity: 0;
     z-index: 2;
-    animation: bulidshadow-0 infinite;
-    animation-duration: 6s;
+    animation: bulidshadow-0 6s infinite 3s alternate;
 }
 @keyframes bulidshadow-0 {
     0%{
-        opacity: 1}
+        opacity: 0}
     50%{
-        opacity: .1}
+        opacity: .8}
     75%{
-        opacity: .8;
+        opacity: .1;
     }
     100%{
         opacity:1;
@@ -310,7 +354,7 @@ body{
 }
 .btn{
     position: absolute;
-    bottom: 1rem;
+    bottom: .8rem;
     left:0.3rem;
     width: 0.375rem;
 }
@@ -319,6 +363,6 @@ body{
     animation-fill-mode: forwards;
 }
 @keyframes btn-0 {
-    from{bottom:1rem}
+    from{bottom:.8rem}
     to{bottom:.1rem;}
 }

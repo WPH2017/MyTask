@@ -18,19 +18,19 @@
         <i class="logo"></i>
         <div class="h-nav">
             <ul>
-                <li class="login"><a href="./login.html">登录 </a>&nbsp;&nbsp;<a href="register.html">注册</a></li>
+                <li class="login"><a href="./mobilelogin.html">登录 </a>&nbsp;&nbsp;<a href="register.html">注册</a></li>
                 <li class="line"></li>
-                <li class="sub">购物车
+                <li class="sub"><a href="cart.html">购物车</a>
                     <div class="subnav subnav1">
-                        <div class="card1">你的购物车暂时没有商品...</div>
+                        <div class="card1 card-cart"></div>
                         <a href="javascript:void(0)">
-                            <div class="card2">快去抢购良仓商品吧！</div>
+                            <div class="card2"></div>
                         </a>
                     </div>
                 </li>
                 <li class="line"></li>
                 <li class="sub">消息
-                    <div class="subnav subnav2"/>
+                    <div class="subnav subnav2">
                     <ul>
                         <a href="javascript:void(0)"><li><span>动态</span><small>0</small></li></a>
                         <a href="javascript:void(0)"><li><span>评论</span><small>0</small></li></a>
@@ -174,6 +174,25 @@
         <ul class="nav">
             <li><a href="">所有杂志</a></li>
         </ul>
+        <div class="mag-box"></div>
+        <div class="pager">
+            <button id="pager-head">第一页</button>
+            <button id="pageup">上一页</button>
+            <a href="javascript:">1</a>
+            <a href="javascript:">2</a>
+            <a href="javascript:">3</a>
+            <a href="javascript:">4</a>
+            <a href="javascript:">5</a>
+            <a href="javascript:">6</a>
+            <a href="javascript:">7</a>
+            <a href="javascript:">8</a>
+            <a href="javascript:">9</a>
+            <a href="javascript:">10</a>
+            <button id="pagedown">下一页</button>
+            | 跳转到
+            <input type="text">页
+            <button id="pager-confirm">确定</button>
+        </div>
         <script type="text/template" id="magStr">
             <div class="magbox">
                 <a href="<%detailurl%>"><img src="<%imgsrc%>" alt=""></a>
