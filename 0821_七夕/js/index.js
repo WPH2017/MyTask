@@ -4,7 +4,7 @@ setInterval(function () {
 },3000);
 
 
-var oBtn=document.getElementsByClassName('btn')[0];
+var oBtn=document.getElementById('btn');
 var oBox=document.getElementsByClassName('box')[0];
 
 oBtn.onclick=function () {
@@ -29,7 +29,14 @@ oBtn.onclick=function () {
 
 
     //改变btn
-    this.className="btn change";
+    this.className="change";
+    var sBtn=document.getElementsByClassName('btn')[0];
+    sBtn.className="btn change";
+    var oA=this.getElementsByTagName('a')[0];
+    setTimeout(function () {
+        oA.href='http://www.ucai.cn';
+    },6000);
+
     //改变bk
     var oBk=document.getElementsByClassName("bk")[0];
     oBk.className="bk bkchange";
@@ -39,6 +46,10 @@ oBtn.onclick=function () {
     oEnvelop.className="envelop enchange";
     var oWord=document.getElementsByClassName("word")[0];
     oWord.className="word wochange";
+
+    //改变箭头
+    var oArrow=document.getElementsByClassName('arrow')[0];
+    oArrow.className='arrow change';
 
     this.onclick=null;
 };
