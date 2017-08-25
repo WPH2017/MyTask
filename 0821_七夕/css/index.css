@@ -1,25 +1,84 @@
-body{
-    margin: 0;
-    padding: 0;
+html {
+    color: #000;
+    background: #FFF;
+    -webkit-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
     overflow: hidden;
 }
+* {
+    margin: 0px;
+    padding: 0px;
 
+}
+a{
+    text-decoration: none;
+    color: transparent;
+}
+input, img {
+    border: none;
+}
 .box{
     position: relative;
     margin: 0 auto;
     width:1rem;
     height:1.792rem;
-    background: linear-gradient(to bottom,rgb(0,0,70),rgb(198,90,249));
-    /*background: linear-gradient(to bottom,rgb(146,65,237),rgb(198,90,249));*/
+    background: linear-gradient(to bottom,rgb(0,0,70),rgb(168,90,249));
+}
+.music{
+    position: absolute;
+    width: .08rem;
+    top:.1rem;
+    right:.1rem;
+    opacity: .5;
+    animation: music-0 infinite 10s;
+    -moz-animation: music-0 infinite 10s;
+    -webkit-animation: music-0 infinite 10s;
+    -o-animation: music-0 infinite 10s;
+}
+@keyframes music-0 {
+    from{}
+    to{transform: rotate(-360deg)}
+}
+@-moz-keyframes music-0 {
+    from{}
+    to{transform: rotate(-360deg)}
+}
+@-webkit-keyframes music-0 {
+    from{}
+    to{transform: rotate(-360deg)}
+}
+@-o-keyframes music-0 {
+    from{}
+    to{transform: rotate(-360deg)}
 }
 .bk{
     width: 1rem;
 }
 .bk.bkchange{
     animation:bk-0 6s;
+    -moz-animation:bk-0 6s;
+    -webkit-animation:bk-0 6s;
+    -o-animation:bk-0 6s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes bk-0 {
+    from{opacity:1;}
+    to{opacity: 0;}
+}
+@-moz-keyframes bk-0 {
+    from{opacity:1;}
+    to{opacity: 0;}
+}
+@-webkit-keyframes bk-0 {
+    from{opacity:1;}
+    to{opacity: 0;}
+}
+@-o-keyframes bk-0 {
     from{opacity:1;}
     to{opacity: 0;}
 }
@@ -29,16 +88,54 @@ body{
     left:.38rem;
     top:0;
     z-index: 2;
-    transform-origin: 0.2rem -.4rem;
-    animation:logo-0 3s;
+    transform-origin: 70% -1.6rem;
+    -moz-transform-origin: 70% -1.6rem;
+    -webkit-transform-origin: 70% -1.6rem;
+    -o-transform-origin: 70% -1.6rem;
+    animation:logo-0 5s;
+    -moz-animation:logo-0 5s;
+    -webkit-animation:logo-0 5s;
+    -o-animation:logo-0 5s;
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes logo-0 {
-    from{top:-.4rem}
-    to{top:0;}
+    0%{top:-.4rem;transform: rotate(0deg)}
+    60%{top:0;transform: rotate(0deg)}
+    100%{transform: rotate(-1.6deg)}
+}
+@-moz-keyframes logo-0 {
+    0%{top:-.4rem;transform: rotate(0deg)}
+    60%{top:0;transform: rotate(0deg)}
+    100%{transform: rotate(-1.6deg)}
+}
+@-webkit-keyframes logo-0 {
+    0%{top:-.4rem;transform: rotate(0deg)}
+    60%{top:0;transform: rotate(0deg)}
+    100%{transform: rotate(-1.6deg)}
+}
+@-o-keyframes logo-0 {
+    0%{top:-.4rem;transform: rotate(0deg)}
+    60%{top:0;transform: rotate(0deg)}
+    100%{transform: rotate(-1.6deg)}
 }
 @keyframes logo-1 {
-    0%{transform: rotate(-2deg)}
-    100%{transform: rotate(4deg)}
+    0%{transform: rotate(-1.6deg)}
+    100%{transform: rotate(1.6deg)}
+}
+@-moz-keyframes logo-1 {
+    0%{transform: rotate(-1.6deg)}
+    100%{transform: rotate(1.6deg)}
+}
+@-webkit-keyframes logo-1 {
+    0%{transform: rotate(-1.6deg)}
+    100%{transform: rotate(1.6deg)}
+}
+@-o-keyframes logo-1 {
+    0%{transform: rotate(-1.6deg)}
+    100%{transform: rotate(1.6deg)}
 }
 
 .jump{
@@ -68,14 +165,31 @@ body{
     /*overflow: hidden;*/
 }
 .envelop.enchange{
-    animation:envelop-1 2s;
+    animation:envelop-1 2.4s;
+    -moz-animation:envelop-1 2.4s;
+    -webkit-animation:envelop-1 2.4s;
+    -o-animation:envelop-1 2.4s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes envelop-1 {
     from{opacity: 1}
     to{opacity: 0}
 }
-
+@-moz-keyframes envelop-1 {
+    from{opacity: 1}
+    to{opacity: 0}
+}
+@-webkit-keyframes envelop-1 {
+    from{opacity: 1}
+    to{opacity: 0}
+}
+@-o-keyframes envelop-1 {
+    from{opacity: 1}
+    to{opacity: 0}
+}
 .word{
     position: absolute;
     width: .5rem;
@@ -84,7 +198,13 @@ body{
     opacity: 0;
     z-index:2;
     animation: word-0 linear 20s;
+    -moz-animation: word-0 linear 20s;
+    -webkit-animation: word-0 linear 20s;
+    -o-animation: word-0 linear 20s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes word-0 {
     0%{opacity: 0;top:0rem;}
@@ -95,67 +215,174 @@ body{
         top:-1.14rem;
     }
 }
-.word.wochange{
-    animation-play-state: paused;
-    animation:word-1 2s;
-    animation-fill-mode: forwards;
+@-moz-keyframes word-0 {
+    0%{opacity: 0;top:0rem;}
+    10%{opacity: 1;
+        top:0rem;}
+    100%{
+        opacity: 1;
+        top:-1.14rem;
+    }
 }
-@keyframes word-1 {
-    from{opacity: 1}
-    to{opacity: 0}
+@-webkit-keyframes word-0 {
+    0%{opacity: 0;top:0rem;}
+    10%{opacity: 1;
+        top:0rem;}
+    100%{
+        opacity: 1;
+        top:-1.14rem;
+    }
 }
+@-o-keyframes word-0 {
+    0%{opacity: 0;top:0rem;}
+    10%{opacity: 1;
+        top:0rem;}
+    100%{
+        opacity: 1;
+        top:-1.14rem;
+    }
+}
+/*.word.wochange{*/
+    /*animation:word-1 2s;*/
+    /*-moz-animation:word-1 2s;*/
+    /*-webkit-animation:word-1 2s;*/
+    /*-o-animation:word-1 2s;*/
+    /*animation-fill-mode: forwards;*/
+    /*-moz-animation-fill-mode: forwards;*/
+    /*-webkit-animation-fill-mode: forwards;*/
+    /*-o-animation-fill-mode: forwards;*/
+/*}*/
+/*@keyframes word-1 {*/
+    /*from{opacity: 1}*/
+    /*to{opacity: 0}*/
+/*}*/
+/*@-moz-keyframes word-1 {*/
+    /*from{opacity: 1}*/
+    /*to{opacity: 0}*/
+/*}*/
+/*@-webkit-keyframes word-1 {*/
+    /*from{opacity: 1}*/
+    /*to{opacity: 0}*/
+/*}*/
+/*@-o-keyframes word-1 {*/
+    /*from{opacity: 1}*/
+    /*to{opacity: 0}*/
+/*}*/
 .arrow{
     position: absolute;
     width: 0.078rem;
     top:.8rem;
     left: .45rem;
     opacity: 0;
-    animation:arrow-0 infinite 1s 10s alternate;
+    animation:arrow-0 infinite 1s 10s linear alternate;
+    -moz-animation:arrow-0 infinite 1s 10s linear alternate;
+    -webkit-animation:arrow-0 infinite 1s 10s linear alternate;
+    -o-animation:arrow-0 infinite 1s 10s linear alternate;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes arrow-0 {
-    from{
-        opacity: 0;
-        top:.79rem;
-    }
-    to{
-        opacity: 1;
-        top:.81rem;
-    }
+    from{ opacity: 0;
+        top:.79rem;  }
+    to{ opacity: 1;
+        top:.81rem;  }
 }
+@-moz-keyframes arrow-0 {
+    from{ opacity: 0;
+        top:.79rem;  }
+    to{ opacity: 1;
+        top:.81rem;  }
+}
+@-webkit-keyframes arrow-0 {
+    from{ opacity: 0;
+        top:.79rem;  }
+    to{ opacity: 1;
+        top:.81rem;  }
+}
+@-o-keyframes arrow-0 {
+    from{ opacity: 0;
+        top:.79rem;  }
+    to{ opacity: 1;
+        top:.81rem;  }
+}
+
 .arrow.change{
     animation:arrow-1 2s;
+    -moz-animation:arrow-1 2s;
+    -webkit-animation:arrow-1 2s;
+    -o-animation:arrow-1 2s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes arrow-1 {
     from{opacity: 1}
     to{opacity: 0}
 }
-
+@-moz-keyframes arrow-1 {
+    from{opacity: 1}
+    to{opacity: 0}
+}
+@-webkit-keyframes arrow-1 {
+    from{opacity: 1}
+    to{opacity: 0}
+}
+@-o-keyframes arrow-1 {
+    from{opacity: 1}
+    to{opacity: 0}
+}
 .qi{
     position: absolute;
-    top:-.05rem;
+    top:-1rem;
     left:0.08rem;
     width: 0.39rem;
     z-index: 2;
-    animation: circle-qi 2s cubic-bezier(0.76, 1.74, 0.79, 0.59);
+    animation: circle-qi 2s .5s cubic-bezier(.41,1.83,.4,.79);
+    -moz-animation: circle-qi 2s .5s cubic-bezier(.41,1.83,.4,.79);
+    -webkit-animation: circle-qi 2s .5s cubic-bezier(.41,1.83,.4,.79);
+    -o-animation: circle-qi 2s .5s cubic-bezier(.41,1.83,.4,.79);
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     /*transform-origin: -.1rem -.2rem;*/
     /*animation-duration: 2s;*/
 }
 @keyframes circle-qi {
-    from{
-        top:-1rem;}
-    to{
-        top:-.05rem;}
+    from{ top:-1rem;}
+    to{ top:-.05rem;}
 }
+@-moz-keyframes circle-qi {
+    from{ top:-1rem;}
+    to{ top:-.05rem;}
+}
+@-webkit-keyframes circle-qi {
+    from{ top:-1rem;}
+    to{ top:-.05rem;}
+}
+@-o-keyframes circle-qi {
+    from{ top:-1rem;}
+    to{ top:-.05rem;}
+}
+
 .xi{
     position: absolute;
-    top:-.04rem;
+    top:-1rem;
     left: .54rem;
     width: 0.436rem;
     z-index: 2;
     /*transform-origin: -.1rem -.2rem;*/
-    animation: circle-xi 3s cubic-bezier(0.76, 1.74, 0.79, 0.59);
+    animation: circle-xi 3s 1s cubic-bezier(.41,1.83,.4,.79);
+    -moz-animation: circle-xi 3s 1s cubic-bezier(.41,1.83,.4,.79);
+    -webkit-animation: circle-xi 3s 1s cubic-bezier(.41,1.83,.4,.79);
+    -o-animation: circle-xi 3s 1s cubic-bezier(.41,1.83,.4,.79);
+    animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     /*animation-duration: 5s;*/
 }
 /*@keyframes circle-xi {*/
@@ -169,6 +396,21 @@ body{
         top:-1rem;}
     to{top:-.04rem;}
 }
+@-moz-keyframes circle-xi {
+    from{
+        top:-1rem;}
+    to{top:-.04rem;}
+}
+@-webkit-keyframes circle-xi {
+    from{
+        top:-1rem;}
+    to{top:-.04rem;}
+}
+@-o-keyframes circle-xi {
+    from{
+        top:-1rem;}
+    to{top:-.04rem;}
+}
 .qixishadow{
     position: absolute;
     top: 0.2rem;
@@ -176,9 +418,27 @@ body{
     width: 0.96rem;
     opacity: 0;
     animation: qixisha-0 5s 2s;
+    -moz-animation: qixisha-0 5s 2s;
+    -webkit-animation: qixisha-0 5s 2s;
+    -o-animation: qixisha-0 5s 2s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes qixisha-0 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@-moz-keyframes qixisha-0 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@-webkit-keyframes qixisha-0 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@-o-keyframes qixisha-0 {
     from{opacity: 0}
     to{opacity: 1}
 }
@@ -190,62 +450,114 @@ body{
     z-index: 3;
     opacity: 0;
     animation: people-0 5s 5s;
+    -moz-animation: people-0 5s 5s;
+    -webkit-animation: people-0 5s 5s;
+    -o-animation: people-0 5s 5s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes people-0 {
     0%{opacity: 0}
     100%{opacity: 1}
 }
-
+@-moz-keyframes people-0 {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+@-webkit-keyframes people-0 {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
+@-o-keyframes people-0 {
+    0%{opacity: 0}
+    100%{opacity: 1}
+}
 .star{
     position: absolute;
     top: 0.2rem;
-    left:.05rem;
+    left:.08rem;
     width: 0.84rem;
-    animation: star-0 infinite;
-    animation-duration: 3s;
+    opacity: 0;
+    animation: star-0 infinite 2s 8s alternate;
+    -moz-animation: star-0 infinite 2s 8s alternate;
+    -webkit-animation: star-0 infinite 2s 8s alternate;
+    -o-animation: star-0 infinite 2s 8s alternate;
 }
 @keyframes star-0 {
-    0%{
-        opacity: 0;
-    }
-    50%{
-        opacity:.6;
-    }
-    100%{
-        opacity:0;}
+    0%{ opacity: 0.2;}
+    100%{ opacity:1;}
+}
+@-moz-keyframes star-0 {
+    0%{ opacity: 0.2;}
+    100%{ opacity:1;}
+}
+@-webkit-keyframes star-0 {
+    0%{ opacity: 0.2;}
+    100%{ opacity:1;}
+}
+@-o-keyframes star-0 {
+    0%{ opacity: 0.2;}
+    100%{ opacity:1;}
 }
 .heart1{
     position: absolute;
     top: .25rem;
     left: .106rem;
     width: .1rem;
-    animation: heart-1 infinite;
-    animation-duration: 4s;
+    opacity: 0;
+    animation: heart-1 infinite 4s 1s;
+    -moz-animation: heart-1 infinite 4s 1s;
+    -webkit-animation: heart-1 infinite 4s 1s;
+    -o-animation: heart-1 infinite 4s 1s;
 }
 @keyframes heart-1 {
-    0%{
-        opacity:0;}
-    50%{
-        opacity:1;}
-    100%{
-        opacity:0;}
+    0%{ opacity:0;}
+    50%{ opacity:1;}
+    100%{ opacity:0;}
+}
+@-moz-keyframes heart-1 {
+    0%{ opacity:0;}
+    50%{ opacity:1;}
+    100%{ opacity:0;}
+}
+@-webkit-keyframes heart-1 {
+    0%{ opacity:0;}
+    50%{ opacity:1;}
+    100%{ opacity:0;}
+}
+@-o-keyframes heart-1 {
+    0%{ opacity:0;}
+    50%{ opacity:1;}
+    100%{ opacity:0;}
 }
 .heart2{
     position: absolute;
     top: .30rem;
     right: .186rem;
     width: .06rem;
-    animation: heart-1 infinite;
-    animation-duration: 5s;
+    opacity: 0;
+    animation: heart-1 5s 3s infinite;
+    -moz-animation: heart-1 5s 3s infinite;
+    -webkit-animation: heart-1 5s 3s infinite;
+    -o-animation: heart-1 5s 3s infinite;
 }
 @keyframes heart-2 {
-    0%{
-        opacity:1;}
-    50%{
-        opacity:0;}
-    100%{
-        opacity:1;}
+    0%{ opacity:0;}
+    100%{ opacity:1;}
+}
+@-moz-keyframes heart-2 {
+    0%{ opacity:0;}
+    100%{ opacity:1;}
+}
+@-webkit-keyframes heart-2 {
+    0%{ opacity:0;}
+    100%{ opacity:1;}
+}
+@-o-keyframes heart-2 {
+    0%{ opacity:0;}
+    100%{ opacity:1;}
 }
 .belt1{
     position: absolute;
@@ -254,9 +566,27 @@ body{
     width: 0.77rem;
     opacity:0;
     animation: belt1-0 3s 1s;
+    -moz-animation: belt1-0 3s 1s;
+    -webkit-animation: belt1-0 3s 1s;
+    -o-animation: belt1-0 3s 1s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes belt1-0 {
+    from{opacity:0;right:-0.77rem}
+    to{opacity:1;right:0}
+}
+@-moz-keyframes belt1-0 {
+    from{opacity:0;right:-0.77rem}
+    to{opacity:1;right:0}
+}
+@-webkit-keyframes belt1-0 {
+    from{opacity:0;right:-0.77rem}
+    to{opacity:1;right:0}
+}
+@-o-keyframes belt1-0 {
     from{opacity:0;right:-0.77rem}
     to{opacity:1;right:0}
 }
@@ -267,9 +597,27 @@ body{
     width: 0.77rem;
     opacity:0;
     animation: belt2-0 3s 2s;
+    -moz-animation: belt2-0 3s 2s;
+    -webkit-animation: belt2-0 3s 2s;
+    -o-animation: belt2-0 3s 2s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes belt2-0 {
+    from{opacity:0;right:-0.77rem}
+    to{opacity:1;right:0}
+}
+@-moz-keyframes belt2-0 {
+    from{opacity:0;right:-0.77rem}
+    to{opacity:1;right:0}
+}
+@-webkit-keyframes belt2-0 {
+    from{opacity:0;right:-0.77rem}
+    to{opacity:1;right:0}
+}
+@-o-keyframes belt2-0 {
     from{opacity:0;right:-0.77rem}
     to{opacity:1;right:0}
 }
@@ -280,9 +628,27 @@ body{
     width:.32rem;
     opacity:0;
     animation: belt3-0 3s 2s;
+    -moz-animation: belt3-0 3s 2s;
+    -webkit-animation: belt3-0 3s 2s;
+    -o-animation: belt3-0 3s 2s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes belt3-0 {
+    from{opacity:0;left:-0.32rem}
+    to{opacity:1;left:0}
+}
+@-moz-keyframes belt3-0 {
+    from{opacity:0;left:-0.32rem}
+    to{opacity:1;left:0}
+}
+@-webkit-keyframes belt3-0 {
+    from{opacity:0;left:-0.32rem}
+    to{opacity:1;left:0}
+}
+@-o-keyframes belt3-0 {
     from{opacity:0;left:-0.32rem}
     to{opacity:1;left:0}
 }
@@ -293,47 +659,94 @@ body{
     width: .4rem;
     z-index: 3;
     animation: text-0 5s 3s;
+    -moz-animation: text-0 5s 3s;
+    -webkit-animation: text-0 5s 3s;
+    -o-animation: text-0 5s 3s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
     /*animation: text-1 infinite;*/
 }
 @keyframes text-0 {
-    0%{
-        left:1rem;}
-    50%{
-        left:1rem;}
-    75%{
-        left:.45rem;
-    }
-    100%{
-        left:.5rem;
-    }
+    0%{ left:1rem;}
+    50%{ left:1rem;}
+    75%{ left:.45rem;}
+    100%{left:.5rem;}
+}
+@-moz-keyframes text-0 {
+    0%{ left:1rem;}
+    50%{ left:1rem;}
+    75%{ left:.45rem;}
+    100%{left:.5rem;}
+}
+@-webkit-keyframes text-0 {
+    0%{ left:1rem;}
+    50%{ left:1rem;}
+    75%{ left:.45rem;}
+    100%{left:.5rem;}
+}
+@-o-keyframes text-0 {
+    0%{ left:1rem;}
+    50%{ left:1rem;}
+    75%{ left:.45rem;}
+    100%{left:.5rem;}
 }
 @keyframes text-1 {
-    0%{
-        left:.5rem;}
-    50%{
-        left:.45rem;}
-    75%{
-        left:.55rem;
-    }
-    100%{
-        left:.5rem;
-    }
+    0%{left:.5rem;}
+    50%{left:.45rem;}
+    75%{left:.55rem;}
+    100%{left:.5rem;}
+}
+@-moz-keyframes text-1 {
+    0%{left:.5rem;}
+    50%{left:.45rem;}
+    75%{left:.55rem;}
+    100%{left:.5rem;}
+}
+@-webkit-keyframes text-1 {
+    0%{left:.5rem;}
+    50%{left:.45rem;}
+    75%{left:.55rem;}
+    100%{left:.5rem;}
+}
+@-o-keyframes text-1 {
+    0%{left:.5rem;}
+    50%{left:.45rem;}
+    75%{left:.55rem;}
+    100%{left:.5rem;}
 }
 .textshadow{
     position: absolute;
-    top: .8rem;
-    right: 0rem;
+    top: .74rem;
+    right: -.12rem;
     width: .746rem;
     opacity: 0;
     animation: textshadow-0 3s 8s;
+    -moz-animation: textshadow-0 3s 8s;
+    -webkit-animation: textshadow-0 3s 8s;
+    -o-animation: textshadow-0 3s 8s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes textshadow-0 {
     from{opacity: 0}
     to{opacity: 1}
 }
-
+@-moz-keyframes textshadow-0 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@-webkit-keyframes textshadow-0 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
+@-o-keyframes textshadow-0 {
+    from{opacity: 0}
+    to{opacity: 1}
+}
 .buliding1{
     position: absolute;
     bottom: 0;
@@ -341,10 +754,28 @@ body{
     width: .33rem;
 }
 .buliding1{
-    animation: b1-0 2s;
+    animation: b1-0 2s cubic-bezier(.41,1.83,.4,.79);
+    -moz-animation: b1-0 2s cubic-bezier(.41,1.83,.4,.79);
+    -webkit-animation: b1-0 2s cubic-bezier(.41,1.83,.4,.79);
+    -o-animation: b1-0 2s cubic-bezier(.41,1.83,.4,.79);
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes b1-0 {
+    from{bottom: -.4rem}
+    to{bottom: 0}
+}
+@-moz-keyframes b1-0 {
+    from{bottom: -.4rem}
+    to{bottom: 0}
+}
+@-webkit-keyframes b1-0 {
+    from{bottom: -.4rem}
+    to{bottom: 0}
+}
+@-o-keyframes b1-0 {
     from{bottom: -.4rem}
     to{bottom: 0}
 }
@@ -356,9 +787,27 @@ body{
 }
 .buliding2{
     animation: b2-0 5s;
+    -moz-animation: b2-0 5s;
+    -webkit-animation: b2-0 5s;
+    -o-animation: b2-0 5s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes b2-0 {
+    from{bottom: -.5rem}
+    to{bottom: 0}
+}
+@-moz-keyframes b2-0 {
+    from{bottom: -.5rem}
+    to{bottom: 0}
+}
+@-webkit-keyframes b2-0 {
+    from{bottom: -.5rem}
+    to{bottom: 0}
+}
+@-o-keyframes b2-0 {
     from{bottom: -.5rem}
     to{bottom: 0}
 }
@@ -369,10 +818,28 @@ body{
     width: 1rem;
 }
 .buliding3{
-    animation: b1-0 7s;
+    animation: b1-0 6s;
+    -moz-animation: b1-0 6s;
+    -webkit-animation: b1-0 6s;
+    -o-animation: b1-0 6s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes b3-0 {
+    from{bottom: -.6rem}
+    to{bottom: 0}
+}
+@-moz-keyframes b3-0 {
+    from{bottom: -.6rem}
+    to{bottom: 0}
+}
+@-webkit-keyframes b3-0 {
+    from{bottom: -.6rem}
+    to{bottom: 0}
+}
+@-o-keyframes b3-0 {
     from{bottom: -.6rem}
     to{bottom: 0}
 }
@@ -384,23 +851,38 @@ body{
     opacity: 0;
     z-index: 2;
     animation: bulidshadow-0 6s infinite alternate;
+    -moz-animation: bulidshadow-0 6s infinite alternate;
+    -webkit-animation: bulidshadow-0 6s infinite alternate;
+    -o-animation: bulidshadow-0 6s infinite alternate;
 }
 @keyframes bulidshadow-0 {
-    0%{
-        opacity: 0}
-    50%{
-        opacity: .8}
-    75%{
-        opacity: .1;
-    }
-    100%{
-        opacity:1;
-    }
+    0%{opacity: 0}
+    50%{opacity: .8}
+    75%{opacity: .1;}
+    100%{opacity:1;}
+}
+@-moz-keyframes bulidshadow-0 {
+    0%{opacity: 0}
+    50%{opacity: .8}
+    75%{opacity: .1;}
+    100%{opacity:1;}
+}
+@-webkit-keyframes bulidshadow-0 {
+    0%{opacity: 0}
+    50%{opacity: .8}
+    75%{opacity: .1;}
+    100%{opacity:1;}
+}
+@-o-keyframes bulidshadow-0 {
+    0%{opacity: 0}
+    50%{opacity: .8}
+    75%{opacity: .1;}
+    100%{opacity:1;}
 }
 #btn{
     position: absolute;
     bottom: .8rem;
-    left:0.3rem;
+    left:0.31rem;
     width: 0.375rem;
     height:.11rem;
     background: url("../img/enter.png") no-repeat;
@@ -408,9 +890,27 @@ body{
 }
 #btn.change{
      animation: btn 3s;
+     -moz-animation: btn 3s;
+     -webkit-animation: btn 3s;
+     -o-animation: btn 3s;
      animation-fill-mode: forwards;
+     -moz-animation-fill-mode: forwards;
+     -webkit-animation-fill-mode: forwards;
+     -o-animation-fill-mode: forwards;
  }
 @keyframes btn {
+    from{bottom:.8rem;}
+    to{bottom:.1rem;}
+}
+@-moz-keyframes btn {
+    from{bottom:.8rem;}
+    to{bottom:.1rem;}
+}
+@-webkit-keyframes btn {
+    from{bottom:.8rem;}
+    to{bottom:.1rem;}
+}
+@-o-keyframes btn {
     from{bottom:.8rem;}
     to{bottom:.1rem;}
 }
@@ -423,13 +923,33 @@ body{
 }
 .btn.change{
     animation: btn-0 3s;
+    -moz-animation: btn-0 3s;
+    -webkit-animation: btn-0 3s;
+    -o-animation: btn-0 3s;
     animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    -webkit-animation-fill-mode: forwards;
+    -o-animation-fill-mode: forwards;
 }
 @keyframes btn-0 {
     from{}
     to{opacity: 0}
 }
+@-moz-keyframes btn-0 {
+    from{}
+    to{opacity: 0}
+}
+@-webkit-keyframes btn-0 {
+    from{}
+    to{opacity: 0}
+}
+@-o-keyframes btn-0 {
+    from{}
+    to{opacity: 0}
+}
 a{
-    text-decoration: none;
-    color: #fff;
+    /*outline:none;*/
+    -moz-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -o-tap-highlight-color: rgba(0,0,0,0);
 }
