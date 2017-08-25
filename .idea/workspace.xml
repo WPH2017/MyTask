@@ -2,12 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="708d77cf-319a-4ea3-b56f-120f0571f33d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/0821_七夕/0821_七夕.zip" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0821_七夕/img/bk.png" afterPath="$PROJECT_DIR$/0821_七夕/img/bk.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0821_七夕/0821_七夕.zip" afterPath="$PROJECT_DIR$/0821_七夕/0821_七夕.zip" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/js/magazine.js" afterPath="$PROJECT_DIR$/0812_良仓/js/magazine.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0821_七夕/css/index.css" afterPath="$PROJECT_DIR$/0821_七夕/css/index.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0821_七夕/index.html" afterPath="$PROJECT_DIR$/0821_七夕/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0821_七夕/js/index.js" afterPath="$PROJECT_DIR$/0821_七夕/js/index.js" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -98,8 +96,8 @@
         <option value="$PROJECT_DIR$/0812_良仓/css/detail.css" />
         <option value="$PROJECT_DIR$/0812_良仓/detail.html" />
         <option value="$PROJECT_DIR$/0812_良仓/js/detail.js" />
-        <option value="$PROJECT_DIR$/0821_七夕/index.html" />
         <option value="$PROJECT_DIR$/0821_七夕/js/index.js" />
+        <option value="$PROJECT_DIR$/0821_七夕/index.html" />
         <option value="$PROJECT_DIR$/0821_七夕/css/index.css" />
       </list>
     </option>
@@ -117,9 +115,9 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="240" />
-    <option name="y" value="51" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="148" />
+    <option name="y" value="103" />
     <option name="width" value="1346" />
     <option name="height" value="688" />
   </component>
@@ -152,7 +150,19 @@
             <path>
               <item name="Task" type="b2602c69:ProjectViewProjectNode" />
               <item name="Task" type="462c0819:PsiDirectoryNode" />
-              <item name="0812_良仓" type="462c0819:PsiDirectoryNode" />
+              <item name="0821_七夕" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Task" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task" type="462c0819:PsiDirectoryNode" />
+              <item name="0821_七夕" type="462c0819:PsiDirectoryNode" />
+              <item name="css" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Task" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Task" type="462c0819:PsiDirectoryNode" />
+              <item name="0821_七夕" type="462c0819:PsiDirectoryNode" />
+              <item name="js" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -224,17 +234,20 @@
       <workItem from="1503499940866" duration="6139000" />
       <workItem from="1503536071163" duration="36635000" />
       <workItem from="1503584615381" duration="3930000" />
-      <workItem from="1503622459673" duration="10125000" />
+      <workItem from="1503622459673" duration="13359000" />
+      <workItem from="1503643087497" duration="54000" />
+      <workItem from="1503647453397" duration="39000" />
+      <workItem from="1503658974818" duration="740000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="166393000" />
+    <option name="totallyTimeSpent" value="170460000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="240" y="51" width="1346" height="688" extended-state="1" />
+    <frame x="148" y="103" width="1346" height="688" extended-state="0" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15263158" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15214068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -321,13 +334,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0721-23_某某某公司/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="12" column="26" lean-forward="true" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0721-23_某某某公司/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164">
@@ -371,7 +377,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -484,13 +489,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/share.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-836">
-          <caret line="25" column="47" lean-forward="false" selection-start-line="25" selection-start-column="47" selection-end-line="25" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0812_良仓/cart.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="397">
@@ -516,9 +514,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="239">
           <caret line="132" column="29" lean-forward="true" selection-start-line="130" selection-start-column="4" selection-end-line="132" selection-end-column="29" />
-          <folding>
-            <element signature="e#1466#1547#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -575,9 +570,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="325">
           <caret line="199" column="39" lean-forward="false" selection-start-line="199" selection-start-column="39" selection-end-line="199" selection-end-column="39" />
-          <folding>
-            <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -585,13 +577,34 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="25" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0721-23_某某某公司/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/share.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0821_七夕/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="308">
+          <caret line="14" column="17" lean-forward="false" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/0821_七夕/js/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="242">
+        <state relative-caret-position="22">
           <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
           <folding>
             <element signature="e#1709#12780#0" expanded="false" />
@@ -599,18 +612,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0821_七夕/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="64" column="35" lean-forward="true" selection-start-line="64" selection-start-column="35" selection-end-line="64" selection-end-column="35" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0821_七夕/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="50" column="34" lean-forward="false" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+        <state relative-caret-position="0">
+          <caret line="48" column="0" lean-forward="false" selection-start-line="48" selection-start-column="0" selection-end-line="48" selection-end-column="52" />
           <folding />
         </state>
       </provider>

@@ -33,15 +33,13 @@ $(function () {
 
     //初始化
     pageChange(1);
-
     //绑定跳转业务
     function pageChange(page) {
         $.ajax({
             "type": "GET",
-            "url": "http://h6.duchengjiu.top/shop/api_goods.php?page=" + page + "&pagesize=21",
+            "url": "http://h6.duchengjiu.top/shop/api_goods.php?cat_id="+catId[1]+"page=" + page + "&pagesize=20",
             "success": function (response) {
                 $('.mag-box').html('');
-                console.log(response);
                 $(response.data).each(function () {
                     var dictionary = {
                         "detailurl": "detail.html?cat_id=" + catId[1] + "&goods_id=" + $(this)[0].goods_id,
