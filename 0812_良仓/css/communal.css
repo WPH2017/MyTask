@@ -120,7 +120,7 @@ i{
 .h-nav .add{
     margin-left:10px;
 }
-.h-nav .add a:hover{
+.h-nav .sub a:hover,.h-nav .add a:hover{
     transition: all .3s;
     color: #ccc;
 }
@@ -181,25 +181,32 @@ i{
 }
 .h-nav .subnav2 ul li{
     display: inline-block;
-    margin:0 15px;
-    width: 160px;
+    width: 100%;
     height: 44px;
     line-height: 44px;
     padding: 0;
-    border-bottom: 1px solid #3f4449;
     color: #ccc;
     font-size: 12px;
     letter-spacing: 1.5px;
 }
-.h-nav .subnav2 ul a:last-of-type li{
-    border-style: none;
-}
-.h-nav .subnav2 ul a:hover li{
+.h-nav .subnav2 ul li:hover{
     background-color: rgb(46, 53, 61);
 }
-/* .h-nav .subnav2 ul li small{
-    text-align: right;
-} */
+.h-nav .subnav2 ul li a{
+    display: block;
+    width: 160px;
+    /*height: 44px;*/
+    /*line-height: 100%;*/
+    margin:0 15px;
+    border-bottom: 1px solid #3f4449;
+}
+.h-nav .subnav2 ul li:last-of-type a{
+    border-style: none;
+}
+.h-nav .subnav2 ul li small{
+    display: block;
+    float: right;
+}
 #backBtn {
     position: fixed;
     right: 35px;
@@ -275,6 +282,8 @@ i{
     width: 260px;
     height: 49px;
 }
+
+/*没法用css实现input获得光标则让父元素停留*/
 #search{
     position: absolute;
     right:-220px;
