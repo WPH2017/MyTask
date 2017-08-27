@@ -1,0 +1,55 @@
+.method-file{
+    overflow: hidden;
+}
+
+.file-add{
+    float: left;
+}
+.file-add img{
+    cursor: pointer;
+}
+.file-form{
+    float: right;
+}
+#add-file{
+    display: none;
+}
+
+.popContainer{
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    z-index: 999;
+    display: none;
+}
+.popAddWindow{
+    position: relative;
+    top:100px;
+    left:25%;
+    width: 800px;
+    height: 600px;
+    background-color: #fff;
+    border-radius:6px;
+    box-shadow: #333 2px 2px 4px 1px;
+}
+.pop-box{
+    position: relative;
+    top: 80px;
+    left: 200px;
+    width: 400px;
+}
+.img-add{
+    width: 400px;
+    cursor: pointer;
+}
+.file-close{
+    display: block;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    cursor: pointer;
+}

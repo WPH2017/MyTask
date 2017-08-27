@@ -1,0 +1,35 @@
+p.dir{
+    margin-bottom:20px;
+    font-size:12px;
+    color: #878787;
+}
+.result-main{
+    text-align: center;
+    color: #999;
+}
+.result-container{
+    overflow: hidden;
+}
+
+.result-box{
+    float:left;
+    margin:25px 25px 0 0;
+    width: 180px;
+    text-align: center;
+}
+.result-container div.result-box:nth-child(5n){
+    margin:25px 0 0 0;
+}
+.result-box img{
+    width: 180px;
+    height: 180px;
+}
+.result-box p{
+    margin: 0;
+    padding: 0 20px;
+    height:20px;
+    font-size:14px;
+    line-height:20px;
+    text-overflow:ellipsis;
+    overflow: hidden;
+}

@@ -1,15 +1,17 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>结算</title>
-    <link rel="stylesheet" href="css/communal.css">
-    <link rel="stylesheet" href="./css/settle.css">
+    <title>添加良品</title>
+    <link href="./img/favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="./css/communal.css">
+    <link rel="stylesheet" href="./css/addGoods.css">
     <script src="./js/jquery-1.12.3.min.js"></script>
 </head>
+
 <body>
 <div class="header-box">
     <div class="header">
@@ -175,47 +177,58 @@
 </div>
 <div class="content-box">
     <div class="content">
-        <img src="./img/car_head.jpg" alt="" class="cart-head">
-        <ul class="step">
-            <li class="step1">1. 购物车订单</li>
-            <li class="step2">2. 订单生成</li>
-            <li class="step3">3. 付款</li>
-        </ul>
-        <div class="address">
-            <p class="s-title">收货地址 <img src="./img/plus.png" alt="" class="add-plus"></p>
-            <!--
-                此处显示拉取的地址
-            -->
-        </div>
-        <div class="goodsform">
-            <p class="s-title">订单详情 <a href="cart.html">返回修改订单</a></p>
-        </div>
-        <div class="notice">
-            <span>备注 </span>
-            <input type="text" placeholder="您可在此写下订单备注，不得超过350字符">
-        </div>
-        <div class="voucher">
-            <span>激活代金券</span>
-            <input type="text" placeholder="请输入代金券">
-            <button>确认使用</button>
-            <a href="javascript:" class="voucher-text">代金券使用方式
 
-            </a>
-            <span class="vou-number">代金券减免 -0.00元</span>
-        </div>
-        <div class="summary">
-            <span>付款总额：</span><span class="sum-number">￥0.00</span><br>
-            <span>为您节省 0.00元</span><br>
-            <span>(含¥0.00礼物包装费)</span>
-        </div>
-        <div class="settleway">
-            <span>支付方式</span><br>
-            <input type="radio" name="pay"><img src="./img/pay-zfb.png" alt="">
-            <input type="radio" name="pay"><img src="./img/pay-wx.png" alt="">
-            <p>若您遇到支付问题，请联系客服热线 400 897 6336（工作日 09:00-18:00）</p>
-            <button class="order-confirm">结算</button>
-        </div>
+        <div class="method-file">
+            <h3>发布良品方式二</h3>
+            <p>本地上传：从你的个人电脑资料中上传良品</p>
+            <div class="file-add">
+                <img src="./img/addImg_bg433_433.png" alt="" class="img-pop">
 
+                <p>仅支持上传Jpg、Gif、Png图片（图片不小于433*433px），且小于5M</p>
+            </div>
+            <div class="file-form">
+                <h4>良品信息</h4>
+                <p>良品名称 <input type="text"></p>
+                <p>价格 <select name="" id="currency">
+                    <option value="">￥人民币</option>
+                    <option value="">$ 美元</option>
+                    <option value="">€ 欧元</option>
+                    <option value="">￡英镑</option>
+                    <option value="">日元</option>
+                </select><input type="text"></p>
+                <p>推荐理由 <input type="textarea"></p>
+                <p>网页链接 <input type="text"></p>
+                <p>所属类别 <select name="" id="liangping-class">
+                    <option value="">请选择良品分类</option>
+                    <option value="">男士</option>
+                    <option value="">家居</option>
+                    <option value="">数码</option>
+                    <option value="">工具</option>
+                    <option value="">玩具</option>
+                    <option value="">美容</option>
+                    <option value="">孩子</option>
+                    <option value="">宠物</option>
+                    <option value="">饮食</option>
+                    <option value="">运动</option>
+                    <option value="">文化</option>
+                    <option value="">女士</option>
+                </select></p>
+                <p>验证码 <input type="text"> <img src="" alt="">换一张</p>
+                <button>保存</button>
+            </div>
+        </div>
+    </div>
+    <div class="popContainer">
+        <div class="popAddWindow">
+            <div class="pop-box">
+                <p>点击添加图片</p>
+                <input type="file" id="add-file">
+                <img src="./img/addImg_bg433_433.png" alt="" class="img-add">
+                <p>向左旋转 向右旋转 原图 矩形 方形</p>
+                <p><button>确定</button><button>取消</button></p>
+            </div>
+            <img src="./img/minus.png" class="file-close">
+        </div>
     </div>
 </div>
 <div class="bottom-content-box">
@@ -273,6 +286,6 @@
     </div>
 </div>
 </body>
-<script src="js/communal.js"></script>
-<script src="./js/settle.js"></script>
+<script src="./js/communal.js"></script>
+<script src="./js/addGoods.js"></script>
 </html>

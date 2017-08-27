@@ -68,6 +68,7 @@ $(function () {
             "type": "GET",
             "url": "http://h6.duchengjiu.top/shop/api_goods.php?cat_id="+cat_id+"&page=" + page + "&pagesize=24",
             "success": function (response) {
+                console.log(response)
                 //先清空容器
                 $('.mag-box').html('');
                 $(response.data).each(function () {
@@ -79,20 +80,33 @@ $(function () {
                         "linkback": "magazine.html?cat_id=" + cat_id,
                         "class": className[cat_id]
                     };
-
                     var tempHtml = $("#magStr").html().replace(/<%([a-zA-Z]+)%>/g, function (match, $1, index, str) {
                         return dictionary[$1];
                     });
                     $(".mag-box").append(tempHtml);
                 });
                 //pager逻辑
-                if (page > response.page.page_count) return alert('到达商品列表底部');
-                //改变按钮的html来模拟按钮滚动
-                $('.pager a').each(function (index) {
-                    if(page>=5){
-                        $(this).html(page+index-4);
-                    }else{
-                        $(this).html(index+1);
+                var pageCount=response.page.page_count;
+                // if (page > pageCount) return alert('到达商品列表底部');
+                //
+                // if(page===1){
+                $('.pager-as nobr').html('');
+                for(var i=0;i<pageCount;i++){
+                    var temp="<a href='javascript:'>"+(i+1)+"</a>";
+                    $('.pager-as nobr').append(temp);
+                }
+                $('.pager-as nobr a').click(function () {
+                    pageChange(1 * $(this).html());
+                });
+                $('.pager-as nobr a').eq(page-1).css('background-color','#7fa6c5').siblings().css('background-color','#eee');
+                // }
+                //按钮滚动进行
+                $('.pager a').each(function () {
+                    if(page>9){
+                        $('.pager-move').css('left',-(page-9)*32);
+                    }
+                    if(page>pageCount){
+                        alert('最后一页了~')
                     }
                 });
                 //保存当前处理的序列，用于后续的页面处理
@@ -118,10 +132,6 @@ $(function () {
         }
         pageChange(temp);
     });
-    $('.pager a').click(function () {
-        pageChange(1 * $(this).html());
-    });
-
     $('#pager-confirm').click(function () {
         pageChange(1 * $('.pager input').val());
     });

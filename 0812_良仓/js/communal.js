@@ -84,24 +84,7 @@ $(function(){
 
         search.bind("searchTextInput",function (){
             var text=search.val();
-            $.ajax({
-                "type":"GET",
-                "url":"http://h6.duchengjiu.top/shop/api_goods.php",
-                "data":{
-                    "search_text":text,
-                },
-                "success":function(response){
-                    console.log(response);
-                    if(response.code===0){
-                        search.css("box-shadow","inset 0 0 0 2px green");
-                        alert(response.message+",开始跳转");
-                        // location='detail.html?id='+response.data.goods_id+"&goods_id="+response.data.cat_id;
-                    }else{
-                        alert(response.message+",请重新输入~");
-                        search.css("box-shadow","inset 0 0 1x 1px red");
-                    }
-                }
-            });
+            location.href="search_result.html?wrd="+encodeURIComponent(text);
         });
     };
     searchIt();
@@ -140,7 +123,7 @@ $(function(){
     var loginIt=function () {
         if(localStorage.getItem("token")){
             var loginbar=$('.login');
-            loginbar.html("<a href='javascript:'>"+ localStorage.getItem("username") +"</a>&nbsp;&nbsp;<a href='javascript:' class='cancle'>退出登录</a>");
+            loginbar.html("<a href='javascript:' class='user'><img src='./img/"+localStorage.getItem('avatar')+"' alt='' class='user-icon'>"+ localStorage.getItem("username") +"</a>&nbsp;&nbsp;&nbsp;&nbsp;<a href='javascript:' class='cancle'>退出登录</a>");
             $('.cancle').click(function(){
                 localStorage.clear();
                 loginbar.html("<a href=\"./mobilelogin.html\">登录 </a>&nbsp;&nbsp;<a href=\"register.html\">注册</a>");

@@ -26,6 +26,20 @@ p.dir{
     height: 350px;
     margin-right:44px;
 }
+.result p{
+    margin-bottom:20px;
+}
+.result p:nth-of-type(1){
+    font-size:20px;
+    font-weight:bold;
+}
+.result p:nth-of-type(2){
+    font-size:14px;
+    color: #ff0000;
+}
+.result p:nth-of-type(4){
+    color: #2751d7;
+}
 
 
 .buyit,.addit,.shareit{

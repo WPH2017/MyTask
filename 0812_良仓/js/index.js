@@ -32,7 +32,7 @@ $(function () {
                     imgIndex=1;
                 }
                 move(imgIndex);
-            },1000);
+            },3000);
         });
 
         //绑定按钮
@@ -106,7 +106,7 @@ $(function () {
             //写入数据
             var oContainer=document.getElementsByClassName("container")[0];
             for(var i=0;i<json.data.length;i++){
-                var html="<a href='detail.html?id="+json.data[i].goods_id+"'><img src="+json.data[i].goods_thumb+" alt=''><div class='detail'><p class='price'>"+json.data[i].price+"</p><p class='name'>"+json.data[i].goods_name+"</p><p class='intro'>"+json.data[i].goods_desc+"</p></div></a><div class='lable'><a href='javascript:void(0)'><img src='' alt=''><span>EON</span></a><div class='heart'><a href='javascript:void(0)'><span class='num'>1200</span></a><img src='./img/heart.png' alt=''></div></div>";
+                var html="<a href='detail.html?cat_id="+json.data[i].cat_id+"&goods_id="+json.data[i].goods_id+"'><img src="+json.data[i].goods_thumb+" alt=''><div class='detail'><p class='price'>"+json.data[i].price+"</p><p class='name'>"+json.data[i].goods_name+"</p><p class='intro'>"+json.data[i].goods_desc+"</p></div></a><div class='lable'><a href='javascript:void(0)'><img src='' alt=''><span>EON</span></a><div class='heart'><a href='javascript:void(0)'><span class='num'>1200</span></a><img src='./img/heart.png' alt=''></div></div>";
                 var temp=document.createElement("div");
                 temp.className="goodbox";
                 temp.innerHTML=html;

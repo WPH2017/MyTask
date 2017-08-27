@@ -9,7 +9,7 @@ $(function () {
         //每一个键名存入json，每一个键值存入键中
         //结果格式：{cat_id:69,goods_id:256718}
         valueJson[temp[0]]=temp[1];
-    };
+    }
 
     //数组处理的方法
     // str.replace(/&*\w+=(\w+)/g,function (match,$1,index,str) {

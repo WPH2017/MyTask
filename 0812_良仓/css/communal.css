@@ -78,9 +78,14 @@ i{
     background: url(../img/icon.png) no-repeat;
     background-position: 0 0px;
 }
-.log:hover img{
-    opacity: .1;
+.logo:hover{
+    transition: .3s;
+    opacity: .7;
     /* filter: Alpha(opacity=50); */
+}
+.user-icon{
+    margin-bottom:-8px;
+    margin-right:8px;
 }
 .h-nav{
     float: right;
@@ -160,6 +165,7 @@ i{
 .card-cart-item p{
     padding-top:10px;
     height:46px;
+    overflow: hidden;
 }
 .card-cart-item .card-amount{
     display: block;
@@ -518,7 +524,7 @@ i{
     background: url("../img/icon.png");
     background-position: -174px 0;
 }
-.download .qrcode {
+.download .qrcode{
     position: absolute;
     top: -144px;
     width: 200px;
@@ -532,6 +538,10 @@ i{
     transition: .3s;
     display: block;
     opacity: 1;
+}
+div.download:hover a{
+    color:#aaa;
+    transition: .3s;
 }
 .download .q1,.download .q2{
     float: left;
