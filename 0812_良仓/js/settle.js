@@ -74,7 +74,7 @@ $(function () {
                         <li>x${data.goods_number}</li>
                         <li>￥${data.goods_number*data.goods_price}</li>
                     </ul>
-                `
+                `;
                     }
                     $('.goodsform').append(html);
 

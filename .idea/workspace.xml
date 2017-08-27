@@ -2,19 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="708d77cf-319a-4ea3-b56f-120f0571f33d" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/0812_良仓/js/communal.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/0812_良仓/js/all.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/cart.html" afterPath="$PROJECT_DIR$/0812_良仓/cart.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/css/index.css" afterPath="$PROJECT_DIR$/0812_良仓/css/index.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/css/communal.css" afterPath="$PROJECT_DIR$/0812_良仓/css/communal.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/css/detail.css" afterPath="$PROJECT_DIR$/0812_良仓/css/detail.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/css/magazine.css" afterPath="$PROJECT_DIR$/0812_良仓/css/magazine.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/detail.html" afterPath="$PROJECT_DIR$/0812_良仓/detail.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/index.html" afterPath="$PROJECT_DIR$/0812_良仓/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/js/index.js" afterPath="$PROJECT_DIR$/0812_良仓/js/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/js/communal.js" afterPath="$PROJECT_DIR$/0812_良仓/js/communal.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/js/detail.js" afterPath="$PROJECT_DIR$/0812_良仓/js/detail.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/js/magazine.js" afterPath="$PROJECT_DIR$/0812_良仓/js/magazine.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/js/register.js" afterPath="$PROJECT_DIR$/0812_良仓/js/register.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/js/settle.js" afterPath="$PROJECT_DIR$/0812_良仓/js/settle.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/login.html" afterPath="$PROJECT_DIR$/0812_良仓/login.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/magazine.html" afterPath="$PROJECT_DIR$/0812_良仓/magazine.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/mobilelogin.html" afterPath="$PROJECT_DIR$/0812_良仓/mobilelogin.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/order.html" afterPath="$PROJECT_DIR$/0812_良仓/order.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/register.html" afterPath="$PROJECT_DIR$/0812_良仓/register.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/settle.html" afterPath="$PROJECT_DIR$/0812_良仓/settle.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/0812_良仓/share.html" afterPath="$PROJECT_DIR$/0812_良仓/share.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/0812_良仓/css/all.css" afterPath="$PROJECT_DIR$/0812_良仓/css/communal.css" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -27,68 +32,18 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0812_良仓/index.html">
+    <leaf>
+      <file leaf-file-name="settle.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/0812_良仓/js/settle.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+            <state relative-caret-position="748">
+              <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+                <marker date="1503831115223" expanded="true" signature="558:943" ph="..." />
+                <marker date="1503831115223" expanded="true" signature="1106:1483" ph="..." />
+                <marker date="1503831115223" expanded="true" signature="2747:3061" ph="..." />
+                <marker date="1503831115223" expanded="true" signature="5071:5539" ph="..." />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/0812_良仓/js/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
-              <folding>
-                <element signature="e#60#2616#0" expanded="false" />
-                <element signature="e#1664#2358#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="communal.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0812_良仓/js/communal.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="169" column="8" lean-forward="true" selection-start-line="169" selection-start-column="8" selection-end-line="169" selection-end-column="8" />
-              <folding>
-                <element signature="e#58#169#0" expanded="false" />
-                <element signature="e#233#1098#0" expanded="false" />
-                <element signature="e#1159#3410#0" expanded="false" />
-                <element signature="e#1295#2467#0" expanded="false" />
-                <element signature="e#2541#3402#0" expanded="false" />
-                <element signature="e#3469#5175#0" expanded="false" />
-                <element signature="e#5260#5678#0" expanded="false" />
-                <element signature="e#5705#7144#0" expanded="false" />
-                <marker date="1503725699421" expanded="true" signature="5383:5389" ph=" " />
-                <marker date="1503725699421" expanded="true" signature="5389:5395" ph=" " />
-                <marker date="1503725699421" expanded="true" signature="5582:5588" ph=" " />
-                <marker date="1503725699421" expanded="true" signature="5588:5594" ph=" " />
-                <marker date="1503725699421" expanded="true" signature="6742:7059" ph="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="communal.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/0812_良仓/css/communal.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="244">
-              <caret line="199" column="18" lean-forward="true" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -128,6 +83,11 @@
       <find>log</find>
       <find>sea</find>
       <find>h-nav</find>
+      <find>magazineClassList</find>
+      <find>3n</find>
+      <find>mag</find>
+      <find>em</find>
+      <find>dir</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -140,12 +100,8 @@
         <option value="$PROJECT_DIR$/demo/readme.md" />
         <option value="$PROJECT_DIR$/demo/Black.html" />
         <option value="$PROJECT_DIR$/0812_良仓/js/mobilelogin.js" />
-        <option value="$PROJECT_DIR$/0812_良仓/js/register.js" />
         <option value="$PROJECT_DIR$/0812_良仓/css/login.css" />
-        <option value="$PROJECT_DIR$/0812_良仓/register.html" />
-        <option value="$PROJECT_DIR$/0812_良仓/mobilelogin.html" />
         <option value="$PROJECT_DIR$/0812_良仓/js/login.js" />
-        <option value="$PROJECT_DIR$/0812_良仓/login.html" />
         <option value="$PROJECT_DIR$/0715-16_员源/css/index.css" />
         <option value="$PROJECT_DIR$/demo/init.css" />
         <option value="$PROJECT_DIR$/0812_良仓/js/magazine-data.js" />
@@ -153,31 +109,35 @@
         <option value="$PROJECT_DIR$/0812_良仓/css/cart.css" />
         <option value="$PROJECT_DIR$/0812_良仓/js/address.json" />
         <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/0812_良仓/js/cart.js" />
         <option value="$PROJECT_DIR$/0812_良仓/css/settle.css" />
-        <option value="$PROJECT_DIR$/0812_良仓/js/settle.js" />
         <option value="$PROJECT_DIR$/0812_良仓/js/order.js" />
         <option value="$PROJECT_DIR$/0812_良仓/css/order.css" />
         <option value="$PROJECT_DIR$/0812_良仓/css/all.css" />
-        <option value="$PROJECT_DIR$/0812_良仓/cart.html" />
-        <option value="$PROJECT_DIR$/0812_良仓/order.html" />
-        <option value="$PROJECT_DIR$/0812_良仓/settle.html" />
-        <option value="$PROJECT_DIR$/0812_良仓/share.html" />
-        <option value="$PROJECT_DIR$/0812_良仓/magazine.html" />
-        <option value="$PROJECT_DIR$/0812_良仓/js/magazine.js" />
-        <option value="$PROJECT_DIR$/0812_良仓/css/magazine.css" />
-        <option value="$PROJECT_DIR$/0812_良仓/css/detail.css" />
-        <option value="$PROJECT_DIR$/0812_良仓/detail.html" />
-        <option value="$PROJECT_DIR$/0812_良仓/js/detail.js" />
         <option value="$PROJECT_DIR$/0821_七夕/js/index.js" />
         <option value="$PROJECT_DIR$/0821_七夕/index.html" />
         <option value="$PROJECT_DIR$/0821_七夕/css/index.css" />
         <option value="$PROJECT_DIR$/0812_良仓/css/index.css" />
         <option value="$PROJECT_DIR$/0812_良仓/js/all.js" />
         <option value="$PROJECT_DIR$/0812_良仓/index.html" />
+        <option value="$PROJECT_DIR$/0812_良仓/js/index.js" />
+        <option value="$PROJECT_DIR$/0812_良仓/js/register.js" />
+        <option value="$PROJECT_DIR$/0812_良仓/css/magazine.css" />
+        <option value="$PROJECT_DIR$/0812_良仓/css/detail.css" />
+        <option value="$PROJECT_DIR$/0812_良仓/order.html" />
+        <option value="$PROJECT_DIR$/0812_良仓/cart.html" />
+        <option value="$PROJECT_DIR$/0812_良仓/login.html" />
+        <option value="$PROJECT_DIR$/0812_良仓/mobilelogin.html" />
+        <option value="$PROJECT_DIR$/0812_良仓/register.html" />
+        <option value="$PROJECT_DIR$/0812_良仓/detail.html" />
+        <option value="$PROJECT_DIR$/0812_良仓/share.html" />
+        <option value="$PROJECT_DIR$/0812_良仓/magazine.html" />
+        <option value="$PROJECT_DIR$/0812_良仓/js/magazine.js" />
+        <option value="$PROJECT_DIR$/0812_良仓/js/detail.js" />
+        <option value="$PROJECT_DIR$/0812_良仓/settle.html" />
+        <option value="$PROJECT_DIR$/0812_良仓/js/cart.js" />
         <option value="$PROJECT_DIR$/0812_良仓/js/communal.js" />
         <option value="$PROJECT_DIR$/0812_良仓/css/communal.css" />
-        <option value="$PROJECT_DIR$/0812_良仓/js/index.js" />
+        <option value="$PROJECT_DIR$/0812_良仓/js/settle.js" />
       </list>
     </option>
   </component>
@@ -194,7 +154,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="170" />
     <option name="y" value="119" />
     <option name="width" value="1346" />
@@ -219,7 +179,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -248,6 +207,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -319,23 +279,25 @@
       <workItem from="1503658974818" duration="740000" />
       <workItem from="1503676130192" duration="883000" />
       <workItem from="1503709149272" duration="15135000" />
+      <workItem from="1503796710201" duration="714000" />
+      <workItem from="1503798037405" duration="21841000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="186478000" />
+    <option name="totallyTimeSpent" value="209033000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="170" y="119" width="1346" height="688" extended-state="0" />
+    <frame x="-8" y="-8" width="1616" height="876" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15214068" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14892268" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3292683" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32882273" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -355,7 +317,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -378,34 +340,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="692">
           <caret line="37" column="16" lean-forward="true" selection-start-line="37" selection-start-column="16" selection-end-line="37" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/js/register.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="38" column="38" lean-forward="false" selection-start-line="38" selection-start-column="38" selection-end-line="38" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/mobilelogin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="462">
-          <caret line="21" column="39" lean-forward="false" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/js/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="352">
-          <caret line="37" column="29" lean-forward="false" selection-start-line="37" selection-start-column="29" selection-end-line="37" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -508,24 +442,10 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0812_良仓/css/settle.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="458">
           <caret line="196" column="18" lean-forward="false" selection-start-line="196" selection-start-column="18" selection-end-line="196" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/js/settle.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="70" column="20" lean-forward="false" selection-start-line="70" selection-start-column="20" selection-end-line="75" selection-end-column="25" />
         </state>
       </provider>
     </entry>
@@ -543,80 +463,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/js/cart.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="218">
-          <caret line="10" column="39" lean-forward="true" selection-start-line="5" selection-start-column="8" selection-end-line="10" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/order.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="404">
-          <caret line="33" column="47" lean-forward="false" selection-start-line="33" selection-start-column="47" selection-end-line="33" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/settle.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="397">
-          <caret line="24" column="47" lean-forward="false" selection-start-line="24" selection-start-column="47" selection-end-line="24" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/css/magazine.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
-          <caret line="50" column="30" lean-forward="false" selection-start-line="50" selection-start-column="30" selection-end-line="50" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/js/magazine.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="246">
-          <caret line="75" column="21" lean-forward="false" selection-start-line="75" selection-start-column="21" selection-end-line="75" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/0812_良仓/css/cart.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="260">
           <caret line="95" column="4" lean-forward="false" selection-start-line="95" selection-start-column="4" selection-end-line="101" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/detail.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="184" column="29" lean-forward="false" selection-start-line="184" selection-start-column="29" selection-end-line="184" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/js/detail.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/css/detail.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="634">
-          <caret line="36" column="19" lean-forward="true" selection-start-line="36" selection-start-column="12" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/magazine.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="199" column="39" lean-forward="false" selection-start-line="199" selection-start-column="39" selection-end-line="199" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -631,13 +481,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="308">
           <caret line="14" column="12" lean-forward="false" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/share.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="34" column="27" lean-forward="false" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -666,46 +509,147 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="19" lean-forward="false" selection-start-line="10" selection-start-column="19" selection-end-line="10" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/js/register.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="491">
+          <caret line="83" column="58" lean-forward="false" selection-start-line="83" selection-start-column="58" selection-end-line="83" selection-end-column="58" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/js/communal.js">
+    <entry file="file://$PROJECT_DIR$/0812_良仓/js/login.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="169" column="8" lean-forward="true" selection-start-line="169" selection-start-column="8" selection-end-line="169" selection-end-column="8" />
+        <state relative-caret-position="594">
+          <caret line="42" column="7" lean-forward="true" selection-start-line="18" selection-start-column="3" selection-end-line="42" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/css/magazine.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="71" column="4" lean-forward="false" selection-start-line="71" selection-start-column="4" selection-end-line="71" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="6" column="13" lean-forward="false" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
           <folding>
-            <element signature="e#58#169#0" expanded="false" />
-            <element signature="e#233#1098#0" expanded="false" />
-            <element signature="e#1159#3410#0" expanded="false" />
-            <element signature="e#1295#2467#0" expanded="false" />
-            <element signature="e#2541#3402#0" expanded="false" />
-            <element signature="e#3469#5175#0" expanded="false" />
-            <element signature="e#5260#5678#0" expanded="false" />
-            <element signature="e#5705#7144#0" expanded="false" />
-            <marker date="1503725699421" expanded="true" signature="5383:5389" ph=" " />
-            <marker date="1503725699421" expanded="true" signature="5389:5395" ph=" " />
-            <marker date="1503725699421" expanded="true" signature="5582:5588" ph=" " />
-            <marker date="1503725699421" expanded="true" signature="5588:5594" ph=" " />
-            <marker date="1503725699421" expanded="true" signature="6742:7059" ph="..." />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/css/communal.css">
+    <entry file="file://$PROJECT_DIR$/0812_良仓/detail.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="244">
-          <caret line="199" column="18" lean-forward="true" selection-start-line="199" selection-start-column="18" selection-end-line="199" selection-end-column="18" />
+        <state relative-caret-position="154">
+          <caret line="7" column="16" lean-forward="false" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/share.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/mobilelogin.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/order.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="24" lean-forward="true" selection-start-line="7" selection-start-column="24" selection-end-line="7" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="55" selection-end-line="7" selection-end-column="55" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="97" column="11" lean-forward="false" selection-start-line="97" selection-start-column="11" selection-end-line="97" selection-end-column="11" />
+          <folding>
+            <element signature="e#60#2616#0" expanded="false" />
+            <element signature="e#1664#2358#0" expanded="false" />
+            <element signature="e#2702#4336#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/magazine.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="177" column="6" lean-forward="false" selection-start-line="177" selection-start-column="6" selection-end-line="177" selection-end-column="6" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/js/magazine.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="550">
+          <caret line="97" column="37" lean-forward="false" selection-start-line="97" selection-start-column="37" selection-end-line="97" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/js/detail.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="462">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+          <folding>
+            <element signature="e#3258#3263#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="179" column="36" lean-forward="true" selection-start-line="179" selection-start-column="36" selection-end-line="179" selection-end-column="36" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/0812_良仓/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+        <state relative-caret-position="396">
+          <caret line="294" column="10" lean-forward="true" selection-start-line="294" selection-start-column="10" selection-end-line="294" selection-end-column="10" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#3;n#div#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
             <element signature="n#div#1;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="false" />
@@ -716,13 +660,81 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/0812_良仓/js/index.js">
+    <entry file="file://$PROJECT_DIR$/0812_良仓/js/communal.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="105" column="18" lean-forward="false" selection-start-line="105" selection-start-column="18" selection-end-line="105" selection-end-column="18" />
+        <state relative-caret-position="499">
+          <caret line="181" column="19" lean-forward="false" selection-start-line="181" selection-start-column="19" selection-end-line="181" selection-end-column="19" />
           <folding>
-            <element signature="e#60#2616#0" expanded="false" />
-            <element signature="e#1664#2358#0" expanded="false" />
+            <element signature="e#58#169#0" expanded="false" />
+            <element signature="e#233#1098#0" expanded="false" />
+            <element signature="e#1159#3389#0" expanded="false" />
+            <element signature="e#1295#2467#0" expanded="false" />
+            <element signature="e#3488#3914#0" expanded="false" />
+            <element signature="e#3952#4372#0" expanded="false" />
+            <element signature="e#4456#4955#0" expanded="false" />
+            <marker date="1503827729052" expanded="true" signature="4630:4636" ph=" " />
+            <marker date="1503827729052" expanded="true" signature="4636:4642" ph=" " />
+            <marker date="1503827729052" expanded="true" signature="4841:4847" ph=" " />
+            <marker date="1503827729052" expanded="true" signature="4847:4853" ph=" " />
+            <marker date="1503827729052" expanded="true" signature="6164:6540" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/css/communal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="427">
+          <caret line="161" column="13" lean-forward="false" selection-start-line="161" selection-start-column="13" selection-end-line="161" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/js/cart.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="177" column="56" lean-forward="true" selection-start-line="177" selection-start-column="56" selection-end-line="177" selection-end-column="56" />
+          <folding>
+            <marker date="1503827444412" expanded="true" signature="537:1591" ph="..." />
+            <marker date="1503827444412" expanded="true" signature="570:730" ph="..." />
+            <marker date="1503827444412" expanded="true" signature="763:829" ph="..." />
+            <marker date="1503827444412" expanded="true" signature="862:1114" ph="..." />
+            <marker date="1503827444412" expanded="true" signature="1166:1251" ph="..." />
+            <marker date="1503827444412" expanded="true" signature="1304:1406" ph="..." />
+            <marker date="1503827444412" expanded="true" signature="1439:1561" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/css/detail.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="44">
+          <caret line="2" column="16" lean-forward="false" selection-start-line="2" selection-start-column="16" selection-end-line="2" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/settle.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="190" column="70" lean-forward="false" selection-start-line="190" selection-start-column="70" selection-end-line="190" selection-end-column="70" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#div#3;n#body#0;n#html#0;n#!!top" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/0812_良仓/js/settle.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="748">
+          <caret line="76" column="18" lean-forward="false" selection-start-line="76" selection-start-column="18" selection-end-line="76" selection-end-column="18" />
+          <folding>
+            <marker date="1503831115223" expanded="true" signature="558:943" ph="..." />
+            <marker date="1503831115223" expanded="true" signature="1106:1483" ph="..." />
+            <marker date="1503831115223" expanded="true" signature="2747:3061" ph="..." />
+            <marker date="1503831115223" expanded="true" signature="5071:5539" ph="..." />
           </folding>
         </state>
       </provider>

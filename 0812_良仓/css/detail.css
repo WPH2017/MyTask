@@ -1,3 +1,9 @@
+p.dir{
+    margin-bottom:20px;
+    font-size:12px;
+    color: #878787;
+}
+
 .left{
     float: left;
     width: 730px;

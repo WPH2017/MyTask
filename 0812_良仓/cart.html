@@ -6,6 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>您的购物车</title>
+    <link href="./img/favicon.png" rel="shortcut icon">
     <link rel="stylesheet" href="css/communal.css">
     <link rel="stylesheet" href="./css/cart.css">
     <script src="./js/jquery-1.12.3.min.js"></script>
@@ -18,153 +19,160 @@
             <ul>
                 <li class="login"><a href="./mobilelogin.html">登录 </a>&nbsp;&nbsp;<a href="register.html">注册</a></li>
                 <li class="line"></li>
-                <li class="sub"><a href="cart.html">购物车</a>
+                <li class="sub cart-list"><a href="cart.html">购物车</a>
                     <div class="subnav subnav1">
-                        <div class="card1 card-cart"></div>
+                        <div class="card1 card-cart">
+                            <!--你的购物车暂时没有商品...-->
+                            <!--<div class="card-cart-item" data-id="${data.goods_id}">-->
+                            <!--<a href="detail.html?id=${data.goods_id}"><img src="${data.goods_thumb}" alt=""></a>-->
+                            <!--<a href="detail.html?id=${data.goods_id}">${data.goods_name}</a><br>-->
+                            <!--数量：${data.goods_number}件<span class="card-amount">￥${data.goods_number*data.goods_price}</span>-->
+                            <!--</div>-->
+                        </div>
                         <a href="javascript:void(0)">
                             <div class="card2"></div>
                         </a>
                     </div>
                 </li>
                 <li class="line"></li>
-                <li class="sub">消息
-                    <div class="subnav subnav2"/>
-                    <ul>
-                        <a href="javascript:void(0)"><li><span>动态</span><small>0</small></li></a>
-                        <a href="javascript:void(0)"><li><span>评论</span><small>0</small></li></a>
-                        <a href="javascript:void(0)"><li><span>私信</span><small>0</small></li></a>
-                        <a href="javascript:void(0)"><li><span>粉丝</span><small>0</small></li></a>
-                        <a href="javascript:void(0)"><li><span>喜欢</span><small>0</small></li></a>
-                        <a href="javascript:void(0)"><li><span>通知</span><small>0</small></li></a>
-                    </ul>
-        </div>
-        </li>
-        <li class="line"></li>
-        <li class="add"><a href="javascript:void(0)">添加良品</a></li>
-        </ul>
-    </div>
-    <div class="c-nav">
-        <ul>
-            <li class="none"><a href="index.html">首页</a></li>
-            <li>
-                <a href="javascript:void(0)">商店</a>
-                <div class="subbox">
-                    <div class="list">
+                <li class="sub"><a href="javascript:">消息</a>
+                    <div class="subnav subnav2">
                         <ul>
-                            <li class="li-icon">
-                                <a href="javacript:void(0)">
-                                    <img src="./img/list-icon/23671.png" alt=""><br>
-                                    <span class="tag">家具</span>
-                                </a>
-                            </li>
-                            <div class="sub">
-                                <div class="arrow"></div>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                            </div><li class="li-icon">
-                            <a href="javacript:void(0)">
-                                <img src="./img/list-icon/23671.png" alt=""><br>
-                                <span class="tag">家具</span>
-                            </a>
-                        </li>
-                            <div class="sub">
-                                <div class="arrow"></div>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                            </div><li class="li-icon">
-                            <a href="javacript:void(0)">
-                                <img src="./img/list-icon/23671.png" alt=""><br>
-                                <span class="tag">家具</span>
-                            </a>
-                        </li>
-                            <div class="sub">
-                                <div class="arrow"></div>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                            </div>
-                            <li class="li-icon">
-                                <a href="javacript:void(0)">
-                                    <img src="./img/list-icon/23671.png" alt=""><br>
-                                    <span class="tag">家具</span>
-                                </a>
-                            </li>
-                            <div class="sub">
-                                <div class="arrow"></div>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                            </div>
-                            <li class="li-icon">
-                                <a href="javacript:void(0)">
-                                    <img src="./img/list-icon/23671.png" alt=""><br>
-                                    <span class="tag">家具</span>
-                                </a>
-                            </li>
-                            <div class="sub">
-                                <div class="arrow"></div>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                                <a href="">装饰摆件</a>
-                            </div>
-
+                            <li><a href="javascript:void(0)"><span>动态</span><small>0</small></a></li>
+                            <li><a href="javascript:void(0)"><span>评论</span><small>0</small></a></li>
+                            <li><a href="javascript:void(0)"><span>私信</span><small>0</small></a></li>
+                            <li><a href="javascript:void(0)"><span>粉丝</span><small>0</small></a></li>
+                            <li><a href="javascript:void(0)"><span>喜欢</span><small>0</small></a></li>
+                            <li><a href="javascript:void(0)"><span>通知</span><small>0</small></a></li>
                         </ul>
                     </div>
-                    <div class="magazine">
-                        <a href="javascript:void(0)">
-                            <img src="./img/magazine.jpg" alt="">
-                            <span>新视线：2015年7月刊</span>
-                        </a>
-                    </div>
-                </div>
-            </li>
-            <li id="magazine">
-                <a href="magazine.html">杂志</a>
-                <div class="subbox para">
-                    <!--<a href="">趣物</a>-->
-                </div>
-            </li>
-            <li id="share">
-                <a href="share.html">分享</a>
-                <div class="subbox para">
-                    <!--<a href="">趣物</a>-->
-                </div>
-            </li>
-            <li class="none"><a href="javascript:void(0)">达人</a></li>
-            <li class="searchbox">
-                <a href="javascript:void(0)" class="search-icon"></a>
-                <div id="search">
-                    <input type="text" placeholder="search...">
-                </div>
-            </li>
-        </ul>
+                </li>
+                <li class="line"></li>
+                <li class="add"><a href="javascript:void(0)">添加良品</a></li>
+            </ul>
+        </div>
+        <div class="c-nav">
+            <ul>
+                <li class="none"><a href="index.html">首页</a></li>
+                <li>
+                    <a href="javascript:void(0)">商店</a>
+                    <div class="subbox">
+                        <div class="list">
+                            <ul>
+                                <li class="li-icon">
+                                    <a href="javacript:void(0)">
+                                        <img src="./img/list-icon/23671.png" alt=""><br>
+                                        <span class="tag">家具</span>
+                                    </a>
+                                </li>
+                                <div class="sub">
+                                    <div class="arrow"></div>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                </div><li class="li-icon">
+                                <a href="javacript:void(0)">
+                                    <img src="./img/list-icon/23671.png" alt=""><br>
+                                    <span class="tag">家具</span>
+                                </a>
+                            </li>
+                                <div class="sub">
+                                    <div class="arrow"></div>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                </div><li class="li-icon">
+                                <a href="javacript:void(0)">
+                                    <img src="./img/list-icon/23671.png" alt=""><br>
+                                    <span class="tag">家具</span>
+                                </a>
+                            </li>
+                                <div class="sub">
+                                    <div class="arrow"></div>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                </div>
+                                <li class="li-icon">
+                                    <a href="javacript:void(0)">
+                                        <img src="./img/list-icon/23671.png" alt=""><br>
+                                        <span class="tag">家具</span>
+                                    </a>
+                                </li>
+                                <div class="sub">
+                                    <div class="arrow"></div>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                </div>
+                                <li class="li-icon">
+                                    <a href="javacript:void(0)">
+                                        <img src="./img/list-icon/23671.png" alt=""><br>
+                                        <span class="tag">家具</span>
+                                    </a>
+                                </li>
+                                <div class="sub">
+                                    <div class="arrow"></div>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                    <a href="">装饰摆件</a>
+                                </div>
 
+                            </ul>
+                        </div>
+                        <div class="magazine">
+                            <a href="javascript:void(0)">
+                                <img src="./img/magazine.jpg" alt="">
+                                <span>新视线：2015年7月刊</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+                <li id="magazine">
+                    <a href="magazine.html">杂志</a>
+                    <div class="subbox para">
+                        <!--<a href="">趣物</a>-->
+                    </div>
+                </li>
+                <li id="share">
+                    <a href="share.html">分享</a>
+                    <div class="subbox para">
+                        <!--<a href="">趣物</a>-->
+                    </div>
+                </li>
+                <li class="none"><a href="javascript:void(0)">达人</a></li>
+                <li class="searchbox">
+                    <a href="javascript:void(0)" class="search-icon"></a>
+                    <div id="search">
+                        <input type="text" placeholder="search...">
+                    </div>
+                </li>
+            </ul>
+
+        </div>
     </div>
-</div>
-<div id="backBtn"></div>
-<a href="javascript:void(0)"><div class="contact">联系客服</div></a>
+    <div id="backBtn"></div>
+    <a href="javascript:void(0)"><div class="contact">联系客服</div></a>
 </div>
 <div class="content-box">
     <div class="content">

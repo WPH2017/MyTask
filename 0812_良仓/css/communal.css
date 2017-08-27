@@ -157,6 +157,10 @@ i{
     margin:10px 20px 0 10px;
     width: 64px;
 }
+.card-cart-item p{
+    padding-top:10px;
+    height:46px;
+}
 .card-cart-item .card-amount{
     display: block;
     float: right;

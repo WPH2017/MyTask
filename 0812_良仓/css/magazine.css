@@ -55,12 +55,12 @@
 }
 .magbox{
     float:left;
-    margin:25px 0 0 23px;
+    margin:25px 23px 0 0;
     width: 318px;
     text-align: center;
 }
-.magbox:nth-of-type(3n+1){
-    margin-left: 0;
+.mag-box div.magbox:nth-child(3n){
+    margin:25px 0 0 0;
 }
 .magbox img{
     width: 318px;
@@ -68,8 +68,12 @@
 }
 .magbox p{
     margin: 0;
-    padding: 0;
+    padding: 0 20px;
+    height:20px;
+    font-size:14px;
     line-height:20px;
+    text-overflow:ellipsis;
+    overflow: hidden;
 }
 .magbox .goto{
 
