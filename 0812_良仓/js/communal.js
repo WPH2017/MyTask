@@ -1,4 +1,37 @@
 $(function(){
+    //7. 顶部小球弹跳
+    //为了最快开始，放在代码顶部
+    var createAndJump=function (str) {
+        var ball=$('<div class="ball '+str+'"></div>').appendTo($('.header-box'));
+        function random() {
+            var num=Math.random()*1000/10;
+            return num+'%';
+        }
+        setInterval(function () {
+            var r=parseInt(Math.random()*256);
+            var g=parseInt(Math.random()*256);
+            var b=parseInt(Math.random()*256);
+            var rgba='rgba('+r+','+g+','+b+',.5)';
+            console.log(rgba)
+            ball.stop();
+            ball.animate({'top':random(),'left':random()},6000).css({'background':rgba});
+        },5000);
+    };
+    var startBall=function () {
+        createAndJump();
+        setTimeout(createAndJump,100);
+        setTimeout(createAndJump,200);
+        setTimeout(createAndJump,300);
+        setTimeout(createAndJump,400);
+        setTimeout(createAndJump,500);
+        setTimeout(createAndJump,1000);
+        setTimeout(createAndJump,1400);
+        setTimeout(createAndJump,1600);
+        setTimeout(createAndJump,1800);
+        setTimeout(createAndJump,2000);
+    };
+    startBall();
+
     //1. 回到顶部
     var backTopIt=function () {
         $("#backBtn").click(function () {
@@ -201,18 +234,4 @@ $(function(){
         })
     };
     trShowOrHide();
-
-    //7. 顶部小球弹跳
-    var ballJump=function () {
-        var ball=$('<div class="ball"></div>').appendTo($('.header-box'));
-        function random() {
-            var num=Math.random()*1000/10;
-            return num+'%';
-        }
-        setInterval(function () {
-            ball.stop();
-            ball.animate({'top':random(),'left':random()},6000);
-        },3000);
-    };
-    ballJump();
 });

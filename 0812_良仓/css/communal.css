@@ -90,12 +90,12 @@ i{
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background-color: rgba(255,255,255,.5);
     animation: ballshow 3s infinite alternate;
+    transition: backgroundColor .3s;
 }
 @keyframes ballshow {
     from{opacity: 1}
-    to{opacity: .2}
+    to{opacity: .3}
 }
 .user-icon{
     margin-bottom:-8px;
