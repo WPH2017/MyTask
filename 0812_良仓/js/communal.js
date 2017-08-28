@@ -104,20 +104,19 @@ $(function(){
             }
         });
 //4.2 share类别导航链接导入
-        $.ajax({
-            "url":"http://h6.duchengjiu.top/shop/api_cat.php",
-            "type":"GET",
-            "success":function (json) {
-                $(json.data).each(function () {
-                    var name=$(this)[0].cat_name;
-                    var tid=$(this)[0].cat_id;
-                    $("#share .subbox").append('<a href="share.html?cat_id='+tid +'">'+name+'</a>');
-                });
-            }
-        });
+//         $.ajax({
+//             "url":"http://h6.duchengjiu.top/shop/api_cat.php",
+//             "type":"GET",
+//             "success":function (json) {
+//                 $(json.data).each(function () {
+//                     var name=$(this)[0].cat_name;
+//                     var tid=$(this)[0].cat_id;
+//                     $("#share .subbox").append('<a href="share.html?cat_id='+tid +'">'+name+'</a>');
+//                 });
+//             }
+//         });
     };
     dataInit();
-
 
 //5.1 检测登录状态，如登录了则设置退出登录的跳转
     var loginIt=function () {
@@ -142,6 +141,7 @@ $(function(){
                 "token":localStorage.getItem("token")
             },
             "success":function (response) {
+                console.log(response)
                 var json=response.data;
                 var html='';
                 if(response.code!==0){
@@ -153,7 +153,11 @@ $(function(){
                 $('.card2').html('查看我的购物车');
                 $('.card2').parent().attr('href','cart.html');
                 $('.cart-list>a').html(function(){
-                    return '<em>'+json.length+'</em> '+$(this).html();
+                    var sum=0;
+                    for(var i=0;i<json.length;i++){
+                        sum+=1*json[i].goods_number;
+                    }
+                    return '<em>'+json.length+'项 '+sum+'件</em> '+$(this).html();
                 });
                 $('.cart-list>a em').css({'color':'blue','font-size':'16px','font-style':'normal'});
                 for(var i=0;i<json.length;i++){
@@ -173,7 +177,42 @@ $(function(){
     };
     cartCheckIt();
 
-    function appendStrItem(parent,string) {
+    //6. 商店表格显隐效果
+    var trShowOrHide=function () {
+        $('.list table td').mouseenter(function () {
+            var tdId=$(this).attr('data-id');
+            var tdParent=$(this).parent();
+            var detail=tdParent.siblings('.r0');
+            switch (tdParent.attr('class')){
+                case 'r1':
+                    detail.eq(0).css('display','block');
+                    break;
+                case 'r2':
+                    detail.eq(1).css('display','block');
+                    break;
+                case 'r3':
+                    detail.eq(2).css('display','block');
+                    break;
+                default:break;
+            }
+        });
+        $('.list table td').mouseleave(function () {
+            $(this).parent().siblings('.r0').css('display','none');
+        })
+    };
+    trShowOrHide();
 
-    }
+    //7. 顶部小球弹跳
+    var ballJump=function () {
+        var ball=$('<div class="ball"></div>').appendTo($('.header-box'));
+        function random() {
+            var num=Math.random()*1000/10;
+            return num+'%';
+        }
+        setInterval(function () {
+            ball.stop();
+            ball.animate({'top':random(),'left':random()},6000);
+        },3000);
+    };
+    ballJump();
 });
