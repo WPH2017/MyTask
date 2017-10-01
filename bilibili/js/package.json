@@ -1,0 +1,17 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "description": "This is my first mongo files~~",
+  "main": "index.js",
+  "scripts": {
+    "test": "'知道哪里错了吗？？？不知道的话你就继续琢磨~~~'"
+  },
+  "keywords": [
+    "MongoDB"
+  ],
+  "author": "WPH2017",
+  "license": "ISC",
+  "dependencies": {
+    "mongodb": "^2.2.31"
+  }
+}

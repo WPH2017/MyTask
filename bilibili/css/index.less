@@ -1,0 +1,195 @@
+@theme:#fb7299;
+@reverseTheme:#fff;
+@fontcolor:#757575;
+
+*{
+  box-sizing:border-box;
+}
+html{
+  font-size: 16px;
+}
+body{
+  position: relative;
+  left:50%;
+  transform:translateX(-50%);
+  font-family: 'Microsoft YaHei';
+  max-width: 540px;
+  color: @fontcolor;
+}
+a{
+  text-decoration: none;
+  color: #000;
+}
+.btn{
+  display: inline-block;
+  border-radius: 5px;
+  padding:0.3rem;
+  cursor: pointer;
+  background: @theme;
+  color: @reverseTheme;
+}
+
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #fff;
+}
+.top-ban{
+  padding: .1rem 0;
+  height: 2.2rem;
+  line-height:2.2rem;
+  >img{
+    height:2rem;
+  }
+  .right-face{
+    float: right;
+    height: 2rem;
+    line-height: 2rem;
+    i{
+      font-size:1.4rem;
+      color: @fontcolor;
+    }
+    img{
+      display: inline-block;
+      height:2rem;
+      border-radius:50%;
+      vertical-align: middle;
+    }
+    .btn{
+      font-size:.8rem;
+      padding:.1rem .3rem;
+      line-height: 1.4rem;
+      vertical-align: middle;
+    }
+  }
+}
+
+nav{
+  position: relative;
+  .box{
+    padding-left:2rem;
+    height:2.4rem;
+    line-height:2.4rem;
+    overflow: hidden;
+    a{
+      display: inline-block;
+      margin-right:2rem;
+      color: @fontcolor;
+    }
+    a.active{
+      color: @theme;
+    }
+  }
+  i{
+    position: absolute;
+    top: 1rem;
+    right: 0;
+  }
+}
+
+.carousel{
+  position: relative;
+  width: 100%;
+  padding-top:5rem;
+  overflow: hidden;
+  .carousel-box{
+    position: relative;
+    width: 100%;
+    img{
+      float: left;
+      width:100%;
+      top: 0;
+      left: 0;
+    }
+  }
+  .circle{
+    position: absolute;
+    bottom: .2rem;
+    //width: 10rem;
+    height:10px;
+    padding: 2px 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius:5px;
+    background: rgba(0,0,0,.6);
+    li{
+      float: left;
+      margin-right:3px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: #fff;
+    }
+    li:last-of-type{
+      margin-right:0;
+    }
+    li.active{
+      background: @theme;
+    }
+  }
+}
+
+.content{
+  width: 100%;
+  padding-top: .4rem;
+  overflow: hidden;
+  .column{
+    overflow: hidden;
+    >p{
+      height: 3.6rem;
+      line-height: 3.6rem;
+      font-size: 1.2rem;
+      a{
+        float: right;
+
+      }
+    }
+    .single{
+      float: left;
+      padding-left: 10px;
+      width: 50%;
+      >div{
+        position: relative;
+        background: #fff;
+        border-radius: 8px;
+        overflow: hidden;
+        img{
+          width: 100%;
+          height:112px;
+        }
+        span{
+          position: absolute;
+          //TODO:这里必须要4px，不知道为什么
+          padding: 2px 0;
+          bottom:4px;
+          width: 100%;
+          text-align: center;
+          background: rgba(0,0,0,.6);
+          color: #fff;
+          font-size:.6rem;
+        }
+      }
+      p{
+        line-height: 1.2rem;
+        font-size: .8rem;
+        margin-bottom: 6px;
+        a{
+          color: #000;
+        }
+      }
+    }
+  }
+}
+
+
+footer{
+  margin-top:2rem;
+  color: @fontcolor;
+  p{
+    font-size:.6rem;
+    height:1.4rem;
+    line-height: 1.4rem;
+    text-align: center;
+  }
+}

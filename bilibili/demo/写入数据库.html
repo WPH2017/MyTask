@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>写入数据库</title>
+    <style>
+        p{
+            font-size:20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+<h3>大框部分</h3>
+<p>分类类别：<input type="text" id="class"></p>
+<p>字体图标类名：<input type="text" id="font-face" placeholder="‘arrow-left’、‘wechat’这样的"></p>
+<p><button id="l-submit">提交</button><button type="reset">重置</button></p>
+
+<h3>小框部分</h3>
+<p>图片链接: <input type="text" id="thumb" placeholder="最好是网上图片的链接"></p>
+<p>描述：<input type="text" id="desc" placeholder="描述文本"></p>
+<p><button id="s-submit">提交</button><button type="reset">重置</button></p>
+
+<script>
+    var MongoClient=require('mongodb').MongoClient;
+    var db_connect_str='mongodb://localhost/27017/bilibili';
+
+    MongoClient.connect(db_connect_str,function (err,db) {
+        if(!err){
+            console.log('连接成功');
+            db.close();
+            console.log('关闭连接');
+        }
+    })
+</script>
+</body>
+</html>

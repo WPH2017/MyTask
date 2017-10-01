@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bilibili首页</title>
+    <link rel="stylesheet" href="./css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/cssreset-min.css">
+    <link rel="stylesheet" href="./css/swiper.min.css">
+    <link rel="stylesheet" href="./css/animate.min.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/vue.js"></script>
+</head>
+<body>
+<header>
+    <section class="top-ban">
+        <img src="./img/logo.png" alt="">
+        <div class="right-face">
+            <i class="fa fa-search"></i>
+            <img src="./img/noface.gif" alt="">
+            <div class="btn">下载客户端</div>
+        </div>
+    </section>
+    <nav>
+        <div class="box">
+            <a href="javascript:" class="active">首页</a>
+            <button class="btn"><a href="javascript:" v-on:click="load">动画</a></button>
+            <a href="javascript:">番剧</a>
+            <a href="javascript:">国创</a>
+            <a href="javascript:">音乐</a>
+            <a href="javascript:">舞蹈</a>
+            <a href="javascript:">科技</a>
+            <a href="javascript:">游戏</a>
+            <a href="javascript:">娱乐</a>
+            <a href="javascript:">鬼畜</a>
+            <a href="javascript:">电影</a>
+            <a href="javascript:">电视剧</a>
+            <a href="javascript:">生活</a>
+            <a href="javascript:">时尚</a>
+            <a href="javascript:">广告</a>
+            <a href="javascript:">直播</a>
+        </div>
+        <i class="fa fa-arrow-circle-down"></i>
+    </nav>
+</header>
+<section class="carousel swiper-container">
+    <div class="carousel-box swiper-wrapper" @mousedown="" @mouseup="">
+        <img src="./img/carousel1.webp" alt="" class="swiper-slide">
+        <img src="./img/carousel2.webp" alt="" class="swiper-slide">
+        <img src="./img/carousel1.webp" alt="" class="swiper-slide">
+        <img src="./img/carousel2.webp" alt="" class="swiper-slide">
+        <img src="./img/carousel1.webp" alt="" class="swiper-slide">
+    </div>
+    <ul class="circle">
+        <li class="active"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+</section>
+<section class="content">
+    <!--<div class="column">-->
+        <!--<p>热门推荐 <a href="javascipt:"><i class="fa fa-code"></i>排行榜 <i class="fa fa-arrow-right"></i></a></p>-->
+        <!--<div class="single">-->
+            <!--<div>-->
+                <!--<img src="./img/ban.webp" alt="">-->
+                <!--<span><i class="fa fa-play"></i>3.4万   <i class="fa fa-ellipsis-h"></i>737</span>-->
+            <!--</div>-->
+            <!--<p><a href="javascript:">【鏡音リン &鏡音レン】病名为爱【Neru】</a></p>-->
+        <!--</div>-->
+    <!--</div>-->
+    <column>
+    </column>
+</section>
+<footer>
+    <p>哔哩哔哩 沪ICP备13002172号-3</p>
+    <p>信息网络传播视听节目许可证：0910417</p>
+</footer>
+<script src="./js/swiper-3.4.2.min.js"></script>
+<script src="./js/swiper.animate1.0.2.min.js"></script>
+<!--<script src="./js/index.js"></script>-->
+<script>
+    var swiper=new Swiper('.swiper-container');
+
+    Vue.component('column',{
+        props:['list'],
+        template:'\
+            <div>\
+            <div class="column" v-for="item in datalist" :key="item.id">\
+                <p>{{ item.column.title1 }} <a :href="item.column.t_link"><i :class="item.column.i_classname"></i>{{ item.column.title2 }} <i class="fa fa-arrow-right"></i></a></p>\
+                <children :content="item.content"></children>\
+            </div></div>\
+        ',
+        data:function () {
+            return {'datalist':datalist};
+        }
+    });
+
+    Vue.component('children',{
+        props:['content'],
+        template:`
+            <div>
+                <div class="single" v-for="con in content" :key="con.id">
+                    <div>
+                        <img :src="con.thumb" alt="">
+                        <span><i class="fa fa-play"></i> {{ con.seen }} <i class="fa fa-ellipsis-h"></i> {{ con.num }} </span>
+                    </div>
+                    <p><a href="javascript:">{{ con.desc }}</a></p>
+                </div>
+            </div>
+        `
+    });
+
+    var datalist=[
+        {
+            'column':{
+                'title1':'热门推荐',
+                'i_classname':'fa fa-code',
+                'title2':'排行榜',
+                't_link':'javascript:'
+            },
+            'content':[{
+                'thumb':'./img/ban2.webp',
+                'seen':'7.5万',
+                'num':12,
+                'desc':'【鏡音リン &鏡音レン】病名为爱【Neru】'
+                },
+                {
+                    'thumb':'./img/ban.webp',
+                    'seen':'7.5万',
+                    'num':12,
+                    'desc':'【鏡音リン &鏡音レン】病名为爱【Neru】'
+                },
+                {
+                    'thumb':'./img/ban2.webp',
+                    'seen':'7.5万',
+                    'num':12,
+                    'desc':'【鏡音リン &鏡音レン】病名为爱【Neru】'
+                },
+                {
+                    'thumb':'./img/ban.webp',
+                    'seen':'7.5万',
+                    'num':12,
+                    'desc':'【鏡音リン &鏡音レン】病名为爱【Neru】'
+                },
+            ]
+        },
+        {
+            'column':{
+                    'title1':'原创音乐',
+                    'i_classname':'fa fa-filter',
+                    'title2':'查看更多',
+                    't_link':'javascript:'
+            },
+            'content':[{
+                'thumb':'./img/ban2.webp',
+                'seen':1234,
+                'num':120,
+                'desc':'【PeardressNono】华晨宇×《无聊人》 即兴改编钢琴版'
+                },
+                {
+                    'thumb':'./img/ban.webp',
+                    'seen':1234,
+                    'num':120,
+                    'desc':'【PeardressNono】华晨宇×《无聊人》 即兴改编钢琴版'
+                },
+                {
+                    'thumb':'./img/ban.webp',
+                    'seen':1234,
+                    'num':120,
+                    'desc':'【PeardressNono】华晨宇×《无聊人》 即兴改编钢琴版'
+                },
+                {
+                    'thumb':'./img/ban2.webp',
+                    'seen':1234,
+                    'num':120,
+                    'desc':'【PeardressNono】华晨宇×《无聊人》 即兴改编钢琴版'
+                },
+            ]
+        },
+        {
+            'column':{
+                'title1':'翻唱',
+                'i_classname':'fa fa-fighter-jet',
+                'title2':'查看更多',
+                't_link':'javascript:'
+            },
+            'content':[{
+                'thumb':'./img/ban2.webp',
+                'seen':'1.2K',
+                'num':67,
+                'desc':'防弹少年团 (BTS) - DNA 钢琴演奏 Piano +乐谱'
+                },
+                {
+                    'thumb':'./img/ban.webp',
+                    'seen':'1.2K',
+                    'num':67,
+                    'desc':'防弹少年团 (BTS) - DNA 钢琴演奏 Piano +乐谱'
+                },
+                {
+                    'thumb':'./img/ban.webp',
+                    'seen':'1.2K',
+                    'num':67,
+                    'desc':'防弹少年团 (BTS) - DNA 钢琴演奏 Piano +乐谱'
+                },
+                {
+                    'thumb':'./img/ban2.webp',
+                    'seen':'1.2K',
+                    'num':67,
+                    'desc':'防弹少年团 (BTS) - DNA 钢琴演奏 Piano +乐谱'
+                },
+            ]
+        },
+        {
+            'column':{
+                'title1':'VOCALOID·UTAU',
+                'i_classname':'fa fa-skyatlas',
+                'title2':'查看更多',
+                't_link':'javascript:'
+            },
+            'content':[{
+                'thumb':'./img/ban.webp',
+                'seen':13254,
+                'num':45,
+                'desc':'【鬼畜翻唱】男人都要买我的刀！'
+                },
+                {
+                    'thumb':'./img/ban2.webp',
+                    'seen':13254,
+                    'num':45,
+                    'desc':'【鬼畜翻唱】男人都要买我的刀！'
+                },
+                {
+                    'thumb':'./img/ban2.webp',
+                    'seen':13254,
+                    'num':45,
+                    'desc':'【鬼畜翻唱】男人都要买我的刀！'
+                },
+                {
+                    'thumb':'./img/ban.webp',
+                    'seen':13254,
+                    'num':45,
+                    'desc':'【鬼畜翻唱】男人都要买我的刀！'
+                },
+            ]
+        },
+    ];
+    var app=new Vue({
+        el:'.content',
+        data:{
+           list:datalist
+        },
+        methods:{
+            load:function (event) {
+                console.log(event)
+                console.log(this)
+            }
+        }
+    });
+    
+    var carousel=new Vue({
+        el:'.carousel',
+        data:{
+
+        },
+        methods:{
+
+        }
+    });
+    var box=new Vue({
+        el:'.box',
+        methods:{
+            load:function (event) {
+                console.log(1)
+                console.log(event)
+                console.log(this)
+            }
+        }
+    });
+    console.log(box);
+</script>
+</body>
+</html>
